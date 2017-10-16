@@ -1,16 +1,28 @@
-.modal-open .modal {
-    background-color: rgba(0, 0, 0, 0.5);
+.template_home.modal-open .fade.in, .template_home .fade.in{
+    background-color: rgba(0, 0, 0, 0.5) ;
 }
 
 
-.modal-dialog {
-    width: 80%;
+.template_home .html .modal-dialog {
+	width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.modal-dialog .modal-footer {
+.template_home .html .modal-footer, .html .modal-header {
     text-align: center;
     border-top: unset;
     font-size: 0.6vw;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 414px) {
+  .template_home .html .modal-footer, .html .modal-header {
+      font-size: 1.8vw;
+  }
+}
+
+@media only screen and (max-width: 413px){
+  .template_home .html .modal-footer, .html .modal-header {
+      font-size: 3vw;
+  }
 }
