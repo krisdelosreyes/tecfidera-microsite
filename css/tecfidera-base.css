@@ -6,8 +6,13 @@ header .logo-options, footer, header .utility-nav {
     background: -webkit-linear-gradient(left, rgba(150,150,150,1) 0%, rgba(76,66,76,1) 0%, rgba(138,138,138,1) 62%, rgba(168,168,168,1) 100%);
     background: -o-linear-gradient(left, rgba(150,150,150,1) 0%, rgba(76,66,76,1) 0%, rgba(138,138,138,1) 62%, rgba(168,168,168,1) 100%);
     background: -ms-linear-gradient(left, rgba(150,150,150,1) 0%, rgba(76,66,76,1) 0%, rgba(138,138,138,1) 62%, rgba(168,168,168,1) 100%);
-    background: linear-gradient(to right, rgba(150,150,150,1) 0%, rgba(76,66,76,1) 0%, rgba(138,138,138,1) 62%, rgba(168,168,168,1) 100%);
+    background: linear-gradient(to right, rgb(123, 133, 142) 0%, rgb(73, 89, 102) 0%, rgb(114, 124, 133) 62%, rgb(124, 134, 143) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#969696', endColorstr='#a8a8a8', GradientType=1 );
+}
+
+.logo-options .col1 .first a {
+    max-width: 100%;
+    margin: 0;
 }
 
 header .mobile-menu-toggle {
@@ -31,8 +36,8 @@ width: 100% !important;
 }
 
 .btn-cta {
-    border-color: unset !important;
-    background-color: unset;
+    border-color: none !important;
+    background-color: none;
 }
 
 .btn-cta .btn-cta-arrow {
@@ -48,7 +53,7 @@ a.btn.btn-cta.responsive-options {
     z-index: 1;
     background-color: rgba(0, 0, 0, 0);
     text-indent: -9999px;
-    border: unset;
+    border: none;
 }
 
 .bx-controls {
@@ -67,7 +72,7 @@ a.btn.btn-cta.responsive-options {
 }
 
 .bx-pager a {
-	background: unset !important;
+	background: none !important;
 }
 
 .back-to-top {
@@ -92,7 +97,7 @@ footer .footer-links {
 
 footer .footer-links-container .footer-info {
 	text-align: center !important;
-	max-width: unset !important;
+	max-width: none !important;
 }
 
 footer .footer-links-container .logo-biogen, .template_home .content {
@@ -120,7 +125,7 @@ footer .footer-links ul.mobile-footer-links a {
 			padding-left: 30px !important;
 	}
 	footer .footer-links ul li:last-child {
-	    border-right: unset !important;
+	    border-right:  !important;
 	}
 	footer .footer-links ul.desktop-footer-links {
 		display: inline-block !important;
@@ -155,7 +160,7 @@ footer .footer-links ul.mobile-footer-links a {
       padding-right: 11px !important;
 	}
 	footer .footer-links ul li:last-child {
-	    border-right: unset !important;
+	    border-right: none !important;
 	}
 	footer .footer-links ul.desktop-footer-links {
 		display: inline-block !important;
@@ -189,7 +194,7 @@ footer .footer-links ul.mobile-footer-links a {
 	footer .footer-links ul li {
     border-bottom: 1px solid #e5e5e5;
 		line-height: 40px;
-		border-right: unset !important;
+		border-right: none !important;
 	}
 
 	footer .desktop-disclaimer {
@@ -223,7 +228,7 @@ footer .footer-links ul.mobile-footer-links a {
 	footer .footer-links ul li {
 		border-bottom: 1px solid #e5e5e5;
 		line-height: 40px;
-		border-right: unset;
+		border-right: none;
 	}
 
 	footer .desktop-disclaimer {
