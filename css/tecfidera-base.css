@@ -129,7 +129,7 @@ footer .footer-links ul.mobile-footer-links a {
 			padding-left: 30px !important;
 	}
 	footer .footer-links ul li:last-child {
-	    border-right:  !important;
+	    border-right: none !important;
 	}
 	footer .footer-links ul.desktop-footer-links {
 		display: inline-block !important;

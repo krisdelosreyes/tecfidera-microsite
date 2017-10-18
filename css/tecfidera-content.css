@@ -2,6 +2,19 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     display: block;
 }
 
+.num-ways {
+  border-radius: 50%;
+  background-color: #0d91e0;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  width: 31px;
+  margin-right: 10px;
+  float: left;
+  height: 31px;
+  padding: 3px 3px 0 3px;
+}
+
 .carousel .wrapper {
     position: relative;
     min-width: 100%;
@@ -38,6 +51,11 @@ p.content-description {
     font-size: 15px;
 }
 
+.column-control-column .text.parbase.section, .nav-image .title.base.parbase.section {
+    margin-top: 20px;
+    display: block;
+}
+
 @media only screen and (min-width: 1495px) {
   .template_genericfullwidth header {
     position: relative;
@@ -45,7 +63,7 @@ p.content-description {
   }
 
   .columncontrol.section {
-    margin-left: 260px;
+    margin-left: 150px;
     margin-right: 50px;
   }
 
