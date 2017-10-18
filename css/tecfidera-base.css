@@ -13,9 +13,13 @@ header .logo-options, footer, header .utility-nav {
 .logo-options .col1 .first a {
     max-width: 100%;
     margin: 0;
+    height: 60px;
 }
 
-header .mobile-menu-toggle {
+
+
+
+header .mobile-menu-toggle, footer .disclaimer-text, .logo-options .col1 .first img {
     display: none;
 }
 

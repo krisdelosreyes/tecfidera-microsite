@@ -1,3 +1,11 @@
+footer .disclaimer-text, .logo-options .col1 .first img {
+    display: block;
+}
+
+.carousel .wrapper {
+    position: relative;
+    min-width: 100%;
+}
 
 .logo-options .col1 .first {
     margin: 15px 0 15px 15px;
