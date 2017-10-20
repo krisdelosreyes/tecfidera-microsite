@@ -2,6 +2,38 @@
     background-color: rgba(0, 0, 0, 0.5) ;
 }
 
+.template_genericfullwidth .modal-backdrop {
+  position: inherit;
+}
+
+.about-biogen-logo{
+  text-align: center;
+}
+
+.content #tecFideraInfoModal .modal-body {
+    height: 385px;
+}
+
+.content #aboutBiogenModal .modal-body {
+    height: 531px;
+}
+
+.content .modal-content {
+    background: linear-gradient(to left, rgb(234, 225, 155) 0%, rgb(245, 239, 218) 0%, rgb(251, 249, 238) 20%, rgb(234, 234, 227) 100%);
+}
+
+clientlib.css:13595
+.m
+
+.content .modal-body {
+    text-align: justify;
+}
+
+.generic-page .html .modal-dialog {
+    width: 100%;
+    margin: 90px auto;
+}
+
 
 .template_home .html .modal-dialog {
 	width: 80%;
@@ -10,7 +42,9 @@
 }
 
 
-.template_home .html .modal-footer, .html .modal-header {
+
+
+.template_home .html .modal-footer, .html .modal-header, .generic-page .html .modal-footer {
     text-align: center;
     border-top: unset;
     font-size: 12px;

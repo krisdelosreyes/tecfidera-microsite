@@ -1,3 +1,16 @@
+.template_genericfullwidth .content {
+    padding: 0;
+}
+
+.main.generic-page.full-width {
+    background: linear-gradient(to left, rgb(234, 225, 155) 0%, rgb(245, 239, 218) 0%, rgb(251, 249, 238) 20%, rgb(234, 234, 227) 100%);
+}
+
+.content .modal-body {
+    text-align: justify;
+    height: 531px;
+}
+
 header .logo-options, footer, header .utility-nav {
     margin: 0;
     background: rgba(150,150,150,1);
