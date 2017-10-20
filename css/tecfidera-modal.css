@@ -9,20 +9,22 @@
     margin-right: auto;
 }
 
+
 .template_home .html .modal-footer, .html .modal-header {
     text-align: center;
     border-top: unset;
-    font-size: 0.6vw;
+    font-size: 12px;
+    font-style: initial;
 }
 
 @media only screen and (max-width: 767px) and (min-width: 414px) {
   .template_home .html .modal-footer, .html .modal-header {
-      font-size: 1.8vw;
+      font-size: 12px;
   }
 }
 
 @media only screen and (max-width: 413px){
   .template_home .html .modal-footer, .html .modal-header {
-      font-size: 3vw;
+      font-size: 12px;
   }
 }

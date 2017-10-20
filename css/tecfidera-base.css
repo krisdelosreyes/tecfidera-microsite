@@ -16,9 +16,6 @@ header .logo-options, footer, header .utility-nav {
     height: 60px;
 }
 
-
-
-
 header .mobile-menu-toggle, footer .disclaimer-text, .logo-options .col1 .first img {
     display: none;
 }
@@ -85,6 +82,20 @@ a.btn.btn-cta.responsive-options {
 
 footer {
 	border-bottom: 30px solid #04a0d6;
+  padding: 0 0 18px;
+
+}
+
+footer .footerSocialIcons {
+    display: none;
+}
+
+footer .logo-biogen {
+    display: none;
+}
+
+.footer-logo img {
+    padding: 30px;
 }
 
 footer, footer a {
@@ -134,6 +145,10 @@ footer .footer-links ul.mobile-footer-links a {
 	footer .footer-links ul.desktop-footer-links {
 		display: inline-block !important;
 	}
+
+  .footer-logo img.logo-mobile {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
@@ -169,6 +184,9 @@ footer .footer-links ul.mobile-footer-links a {
 	footer .footer-links ul.desktop-footer-links {
 		display: inline-block !important;
 	}
+  .footer-logo img.logo-mobile {
+    display: none;
+  }
 }
 
 
@@ -204,6 +222,10 @@ footer .footer-links ul.mobile-footer-links a {
 	footer .desktop-disclaimer {
     padding: 10px;
 	}
+
+  .footer-logo img.logo-desktop {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -238,4 +260,8 @@ footer .footer-links ul.mobile-footer-links a {
 	footer .desktop-disclaimer {
     padding: 10px;
 	}
+
+  .footer-logo img.logo-desktop {
+    display: none;
+  }
 }

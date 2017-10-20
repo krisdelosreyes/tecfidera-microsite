@@ -56,6 +56,37 @@ p.content-description {
     display: block;
 }
 
+.nav-image .calltoaction .tysabri-cta {
+    display: inline-block;
+    color: #f0a055;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 247px;
+    height: 40px;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 0 1em grey;
+    -webkit-box-shadow: 0 0 1em grey;
+    -moz-box-shadow: 0 0 1em gray;
+    /*box-shadow: none;
+        -webkit-box-shadow: none;*/
+
+}
+
+.nav-image .calltoaction .tysabri-promo-container {
+    padding-left: 0;
+    padding-right: 10px;
+    height: -14px;
+    width: 20%;
+    margin-right: 390px;
+    margin-top: -48px;
+}
+
+.nav-image .calltoaction .tysabri-promo-container.last {
+    float: right;
+}
+
 @media only screen and (min-width: 1495px) {
   .template_genericfullwidth header {
     position: relative;
@@ -72,7 +103,6 @@ p.content-description {
       z-index: 1;
   }
 }
-
 
 @media only screen and (max-width: 1494px) and (min-width: 1161px) {
   .template_genericfullwidth header {
@@ -105,6 +135,10 @@ p.content-description {
 
   .nav-image .adaptiveimage figure img {
       margin-top: 80px;
+  }
+
+  .nav-image .calltoaction .tysabri-promo-container {
+    margin-right: 150px;
   }
 }
 
