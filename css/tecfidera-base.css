@@ -129,7 +129,11 @@ footer .footer-links ul.mobile-footer-links a {
     color: white !important;
 }
 
-@media only screen and (min-width: 1212px) {
+footer .footer-links ul li {
+    border-right: 0.5px solid white !important;
+}
+
+@media only screen and (min-width: 1025px) {
   .bx-pager a {
     width: 1.4vw;
     height: 1.4vw;
@@ -137,8 +141,6 @@ footer .footer-links ul.mobile-footer-links a {
     border: 4px solid #a4a4a4;
     border-radius: 15px;
   }
-
-
 
 	footer .wrapper {
 		max-width: 80%;
@@ -157,6 +159,7 @@ footer .footer-links ul.mobile-footer-links a {
   .footer-logo img.logo-mobile {
     display: none;
   }
+
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
