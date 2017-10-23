@@ -6,11 +6,6 @@
     background: linear-gradient(to left, rgb(234, 225, 155) 0%, rgb(245, 239, 218) 0%, rgb(251, 249, 238) 20%, rgb(234, 234, 227) 100%);
 }
 
-.content .modal-body {
-    text-align: justify;
-    height: 531px;
-}
-
 header .logo-options, footer, header .utility-nav {
     margin: 0;
     background: rgba(150,150,150,1);
@@ -95,8 +90,6 @@ a.btn.btn-cta.responsive-options {
 
 footer {
 	border-bottom: 30px solid #04a0d6;
-  padding: 0 0 18px;
-
 }
 
 footer .footerSocialIcons {
@@ -144,6 +137,8 @@ footer .footer-links ul.mobile-footer-links a {
     border: 4px solid #a4a4a4;
     border-radius: 15px;
   }
+
+
 
 	footer .wrapper {
 		max-width: 80%;
