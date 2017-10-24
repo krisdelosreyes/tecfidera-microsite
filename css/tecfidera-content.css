@@ -11,6 +11,11 @@
   padding: 3px 3px 0 3px;
 }
 
+.footer-logo {
+    margin-top: 0px;
+}
+
+
 .carousel .wrapper {
     position: relative;
     min-width: 100%;
@@ -36,8 +41,15 @@
 .nav-image .adaptiveimage figure img {
   float: left;
   margin-left: -36px;
-  margin-top: 85px;
-  margin-bottom: 25px;
+  margin-top: 120px;
+  margin-bottom: 10px;
+}
+
+.start-nav-image .adaptiveimage figure img{
+  float: left;
+  margin-left: -36px;
+  margin-top: 234px;
+  margin-bottom: 10px
 }
 
 p.content-title {
@@ -67,8 +79,7 @@ p.content-description {
     color: #f0a055;
     text-transform: uppercase;
     font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     width: 247px;
     height: 40px;
     border: 1px solid #d3d3d3;
@@ -132,16 +143,25 @@ footer .disclaimer-text, .logo-options .col1 .first img {
 }
 
 .fact-sheet-image .adaptiveimage figure img {
-    margin-top: -50px;
+    margin-top: -208px;
     z-index: 1;
 }
 
 @media only screen and (max-width: 1687px) and (min-width: 1495px) {
 
+  .template_genericfullwidth header {
+    position: relative;
+    z-index: 0;
+  }
+
+  .logo-options .col1 .first {
+      margin: 15px 0 15px 15px;
+  }
+
   .nav-image .adaptiveimage figure img {
     margin-left: -36px;
-    margin-top: 181px;
-    margin-bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 10px;
   }
 
   .nav-image .calltoaction .tysabri-promo-container {
@@ -159,32 +179,45 @@ footer .disclaimer-text, .logo-options .col1 .first img {
       margin: 15px 0 15px 15px;
   }
 
-
-  .nav-image .adaptiveimage figure img {
-      float: left;
-      margin-left: -36px;
-  }
-
   .nav-image .calltoaction .tysabri-promo-container {
     margin-right: 140px;
   }
 
   .fact-sheet-image .adaptiveimage figure img {
-      margin-top: -50px;
+      margin-top: -200px;
       z-index: 1;
   }
 
   .nav-image .adaptiveimage figure img {
     float: left;
     margin-left: -36px;
-    margin-top: 181px;
-    margin-bottom: 25px;
+    margin-top: 54px;
+    margin-bottom: 10px;
   }
 
 }
 
+@media only screen and (min-width: 2050px) {
+  .nav-image .calltoaction .tysabri-promo-container{
+    margin-right: 501px;
+  }
+}
 
-@media only screen and (max-width: 1160px) and (min-width: 769px) {
+@media only screen and (max-width: 2049px) and (min-width: 1797px) {
+  .nav-image .calltoaction .tysabri-promo-container{
+    margin-right: 351px;
+  }
+
+}
+
+@media only screen and (max-width: 1796px) and (min-width: 1161px) {
+  .nav-image .calltoaction .tysabri-promo-container{
+    margin-right: 127px;
+  }
+}
+
+
+@media only screen and (max-width: 1160px) and (min-width: 768px) {
   .template_genericfullwidth header {
     position: relative;
     z-index: 0;
@@ -194,17 +227,21 @@ footer .disclaimer-text, .logo-options .col1 .first img {
       margin: 15px 0 15px 15px;
   }
 
+  .fact-sheet-image div.image.adaptiveimage {
+    margin-bottom: -15px;
+  }
+
   .fact-sheet-image .adaptiveimage figure img {
-      margin-top: -50px;
+      margin-top: -160px;
       z-index: 1;
   }
 
   .nav-image .adaptiveimage figure img {
-      margin-top: 80px;
+      margin-top: -35px;
   }
 
   .nav-image .calltoaction .tysabri-cta {
-    margin-top: 18px;
+    margin-top: 30px;
     height: 30px;
   }
 
@@ -213,9 +250,132 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 414px) {
+@media only screen and (max-width: 767px) and (min-width: 414px) {
+  .content .main .adaptiveimage figure img {
+    width: auto;
+  }
+
+  .teasertile .media .media-body p {
+    font-size: 14px;
+  }
+
+  .hidden-xs {
+    display: block !important;
+  }
+
+  .fact-sheet-image div.image.adaptiveimage {
+    margin-bottom: -15px;
+  }
+
+  .template_genericfullwidth header {
+    position: relative;
+    z-index: 1;
+  }
+
+  .fact-sheet-image .adaptiveimage figure img {
+      margin-top: -128px;
+      z-index: 0;
+  }
+
+  .generic-page .columncontrol.section {
+      margin-left: 15px;
+      margin-right: 20px;
+  }
+
+  .start-nav-image .adaptiveimage figure img {
+    float: left;
+    margin-left: -36px;
+    margin-top: -47px;
+    margin-bottom: 10px;
+  }
+
+  .nav-image .adaptiveimage figure img {
+    float: left;
+    margin-left: -36px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
   p.content-title {
-      font-size: 2vw;
+      font-size: 13px;
+  }
+
+  .logo-options .col1 .first {
+      margin: 15px 0 15px 15px;
+  }
+
+  .columncontrol.section .column-control-column .text.parbase.section {
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+
+  p.content-description {
+    font-size: 13px;
+  }
+  .nav-image .calltoaction .tysabri-promo-container {
+      margin-right: 160px;
+  }
+
+  .nav-image .calltoaction .tysabri-cta {
+    margin-top: 33px;
+    height: 30px;
+  }
+
+  .columncontrol.section .column-control-column .columncontrol.section {
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 413px) {
+
+  .template_genericfullwidth header {
+    position: relative;
+    z-index: 1;
+  }
+
+  .teasertile .media .media-body p {
+    font-size: 14px;
+  }
+
+  .hidden-xs {
+    display: block !important;
+  }
+
+  .content .main .adaptiveimage figure img {
+    width: auto;
+  }
+
+  .fact-sheet-image .adaptiveimage figure img {
+      margin-top: 0px;
+      z-index: 0;
+  }
+
+  .columncontrol.section .column-control-column .columncontrol.section {
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+
+  .generic-page .columncontrol.section {
+      margin-left: 15px;
+      margin-right: 20px;
+  }
+
+  .nav-image .adaptiveimage figure img {
+    float: left;
+    margin-left: -36px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  p.content-title {
+      font-size: 13px;
   }
 
   .logo-options .col1 .first {
@@ -223,16 +383,13 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   }
 
   p.content-description {
-      font-size: 1.9vw;
+    font-size: 13px;
   }
   .nav-image .calltoaction .tysabri-promo-container {
       margin-right: 160px;
   }
 
   .nav-image .calltoaction .tysabri-cta {
-    margin-top: 18px;
+    margin-top: 33px;
     height: 30px;
   }
-
-
-}
