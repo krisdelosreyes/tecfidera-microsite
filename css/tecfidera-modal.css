@@ -18,37 +18,48 @@
     height: 531px;
 }
 
-.content .modal-content {
+.content .modal-content, .html .modal-content{
     background: linear-gradient(to left, rgb(234, 225, 155) 0%, rgb(245, 239, 218) 0%, rgb(251, 249, 238) 20%, rgb(234, 234, 227) 100%);
 }
-
-clientlib.css:13595
-.m
 
 .content .modal-body {
     text-align: justify;
 }
 
 .generic-page .html .modal-dialog {
-    width: 100%;
-    margin: 90px auto;
+  width: 100%;
+  margin: 90px auto;
+  content: '';
+  z-index: -1;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  height: auto;
 }
-
 
 .template_home .html .modal-dialog {
-	width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
-
 
 .template_home .html .modal-footer, .html .modal-header, .generic-page .html .modal-footer {
     text-align: center;
     border-top: unset;
     font-size: 12px;
     font-style: initial;
+}
+
+.template_home .html .modal-header{
+    padding: 50px 10px 20px;
+}
+
+.template_home .html .modal-body, .template_home .html .modal-footer {
+    padding: 15px 50px 20px;
+}
+
+.template_home .html .modal-header .close {
+    margin-top: -35px;
 }
 
 @media only screen and (max-width: 767px) and (min-width: 414px) {

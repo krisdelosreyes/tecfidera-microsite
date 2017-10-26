@@ -28,6 +28,12 @@ header .mobile-menu-toggle, footer .disclaimer-text, .logo-options .col1 .first 
     display: none;
 }
 
+.template_home .carousel {
+    margin-top: -2px;
+    margin-bottom: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 .carousel .wrapper {
     position: relative;
     min-width: 100%;
@@ -134,18 +140,27 @@ footer .footer-links ul li {
     border-right: 0.5px solid white !important;
 }
 
-.footer-logo {
+.template_genericfullwidth .footer-logo {
     margin-bottom: -10px;
     margin-top: 100px;
 }
 
-@media only screen and (max-width: 1796px) and (min-width: 1161px) {
-  footer .footer-links {
-    width: 101%;
-  }
+.template_home .footer-logo {
+    margin-bottom: -10px;
+    margin-top: 50px;
 }
 
-@media only screen and (min-width: 1025px) {
+footer .disclaimer-text, .logo-options .col1 .first img {
+  display: block;
+}
+
+@media only screen and (max-width: 1796px) and (min-width: 1161px) {
+  footer .wrapper {
+		max-width: 80%;
+	}
+}
+
+@media only screen and (min-width: 1023px) {
   .bx-pager a {
     width: 25px;
     height: 25px;
@@ -159,11 +174,13 @@ footer .footer-links ul li {
   }
 
 	footer .wrapper {
-		max-width: 80%;
+		max-width: 90%;
 	}
+
 	footer .footer-links ul li {
-	    border-right: 0.5px solid white !important;
-			padding-left: 30px !important;
+	  border-right: 0.5px solid white !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
 	}
 	footer .footer-links ul li:last-child {
 	    border-right: none !important;
@@ -204,11 +221,13 @@ footer .footer-links ul li {
 	footer .wrapper {
 		max-width: 80%;
 	}
+
 	footer .footer-links ul li {
 	    border-right: 0.5px solid white !important;
 			padding-left: 9px !important;
       padding-right: 11px !important;
 	}
+
 	footer .footer-links ul li:last-child {
 	    border-right: none !important;
 	}
@@ -228,6 +247,10 @@ footer .footer-links ul li {
     margin: 0 3px;
     border: 2px solid #a4a4a4;
     border-radius: 15px;
+  }
+
+  header .mobile-menu-toggle, footer .disclaimer-text, .logo-options .col1 .first img {
+      display: none;
   }
 
   .bx-controls {
@@ -268,6 +291,10 @@ footer .footer-links ul li {
     border-radius: 10px;
   }
 
+  header .mobile-menu-toggle, footer .disclaimer-text, .logo-options .col1 .first img {
+      display: none;
+  }
+
   .bx-controls {
       text-align: right;
       right: 90px;
@@ -294,5 +321,31 @@ footer .footer-links ul li {
 
   .footer-logo img.logo-desktop {
     display: none;
+  }
+
+  img.logo-mobile.tecfidera {
+      width: 240px;
+  }
+
+  img.logo-mobile.biogen {
+      width: 150px;
+  }
+
+  .footer-logo img {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  img.logo-mobile.tecfidera {
+      width: 180px;
+  }
+
+  img.logo-mobile.biogen {
+    width: 120px;
+  }
+
+  header .mobile-menu-toggle, footer .disclaimer-text, .logo-options .col1 .first img {
+      display: none;
   }
 }

@@ -41,7 +41,7 @@
 .nav-image .adaptiveimage figure img {
   float: left;
   margin-left: -36px;
-  margin-top: 120px;
+  margin-top: 86px;
   margin-bottom: 10px;
 }
 
@@ -108,10 +108,6 @@ p.content-description {
   margin-left: -34px;
 }
 
-footer .disclaimer-text, .logo-options .col1 .first img {
-  display: block;
-}
-
 .content-subtitle{
   color: #0088cf;
   font-weight: 500;
@@ -142,12 +138,47 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   z-index: 0;
 }
 
-.fact-sheet-image .adaptiveimage figure img {
-    margin-top: -208px;
-    z-index: 1;
+.fact-sheet-image .section img.talent {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media only screen and (max-width: 1687px) and (min-width: 1495px) {
+.fact-sheet img.talent.desktop-image {
+  display: block;
+  margin-top: -208px;
+  z-index: 1;
+}
+
+.fact-sheet img.talent.desktop-image.default{
+  margin-top: -176px;
+}
+
+footer .disclaimer-text, .logo-options .col1 .first img {
+  display: block;
+}
+
+@media only screen and (min-width: 2050px) {
+  .nav-image .calltoaction .tysabri-promo-container{
+    margin-right: 501px;
+  }
+
+  .fact-sheet img.talent.mobile-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 2049px) and (min-width: 1797px) {
+  .nav-image .calltoaction .tysabri-promo-container{
+    margin-right: 351px;
+  }
+
+  .fact-sheet img.talent.mobile-image {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1796px) and (min-width: 1495px) {
 
   .template_genericfullwidth header {
     position: relative;
@@ -155,7 +186,7 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   }
 
   .logo-options .col1 .first {
-      margin: 15px 0 15px 15px;
+    margin: 15px 0 15px -218px;
   }
 
   .nav-image .adaptiveimage figure img {
@@ -167,7 +198,13 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   .nav-image .calltoaction .tysabri-promo-container {
     margin-right: 230px;
   }
+
+  .fact-sheet img.talent.mobile-image {
+    display: none;
+  }
+
 }
+
 
 @media only screen and (max-width: 1494px) and (min-width: 1161px) {
   .template_genericfullwidth header {
@@ -176,16 +213,24 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   }
 
   .logo-options .col1 .first {
-      margin: 15px 0 15px 15px;
+    margin: 15px 0 15px -29px;
   }
 
   .nav-image .calltoaction .tysabri-promo-container {
     margin-right: 140px;
   }
 
-  .fact-sheet-image .adaptiveimage figure img {
-      margin-top: -200px;
-      z-index: 1;
+  .fact-sheet img.talent.desktop-image {
+    display: block;
+    margin-top: 200px;
+    z-index: 1;
+  }
+
+  .start-nav-image .adaptiveimage figure img {
+      float: left;
+      margin-left: -36px;
+      margin-top: 69px;
+      margin-bottom: 10px;
   }
 
   .nav-image .adaptiveimage figure img {
@@ -195,29 +240,19 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     margin-bottom: 10px;
   }
 
-}
-
-@media only screen and (min-width: 2050px) {
-  .nav-image .calltoaction .tysabri-promo-container{
-    margin-right: 501px;
+  .fact-sheet img.talent.mobile-image {
+    display: none;
   }
-}
 
-@media only screen and (max-width: 2049px) and (min-width: 1797px) {
-  .nav-image .calltoaction .tysabri-promo-container{
-    margin-right: 351px;
+  .fact-sheet img.talent.desktop-image {
+    display: block;
+    margin-top: -160px;
+    z-index: 1;
   }
 
 }
 
-@media only screen and (max-width: 1796px) and (min-width: 1161px) {
-  .nav-image .calltoaction .tysabri-promo-container{
-    margin-right: 127px;
-  }
-}
-
-
-@media only screen and (max-width: 1160px) and (min-width: 768px) {
+@media only screen and (max-width: 1160px) and (min-width: 768px){
   .template_genericfullwidth header {
     position: relative;
     z-index: 0;
@@ -225,19 +260,6 @@ footer .disclaimer-text, .logo-options .col1 .first img {
 
   .logo-options .col1 .first {
       margin: 15px 0 15px 15px;
-  }
-
-  .fact-sheet-image div.image.adaptiveimage {
-    margin-bottom: -15px;
-  }
-
-  .fact-sheet-image .adaptiveimage figure img {
-      margin-top: -160px;
-      z-index: 1;
-  }
-
-  .nav-image .adaptiveimage figure img {
-      margin-top: -35px;
   }
 
   .nav-image .calltoaction .tysabri-cta {
@@ -248,9 +270,58 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   .nav-image .calltoaction .tysabri-promo-container {
     margin-right: 150px;
   }
+
+  .fact-sheet img.talent.desktop-image {
+      display: block;
+      z-index: 1;
+  }
+
+  .fact-sheet img.talent.mobile-image {
+    display: none;
+  }
+
+  .fact-sheet img.talent.desktop-image {
+    margin-top: -160px;
+  }
+
+  .nav-image .adaptiveimage figure img {
+    margin-top: -42px;
+  }
 }
 
+@media only screen and (max-width: 1160px) and (min-width: 768px) and (orientation: landscape) {
+
+  .fact-sheet-image div.image.adaptiveimage {
+    margin-bottom: -15px;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 1160px) and (min-width: 768px) and (orientation: portrait) {
+  .fact-sheet img {
+    height: auto !important;
+    max-width: none;
+    width: auto !important;
+  }
+
+  .fact-sheet-image .section img.talent {
+      margin-left: -63px;
+  }
+
+}
+
+
 @media only screen and (max-width: 767px) and (min-width: 414px) {
+  .fact-sheet img.talent.mobile-image {
+    display: block;
+  }
+
+  .fact-sheet img.talent.desktop-image {
+    display: none;
+  }
+
   .content .main .adaptiveimage figure img {
     width: auto;
   }
@@ -331,6 +402,29 @@ footer .disclaimer-text, .logo-options .col1 .first img {
 }
 
 @media only screen and (max-width: 413px) {
+  .start-nav-image .adaptiveimage figure img {
+    margin-top: -56px;
+  }
+
+
+  .logo-options .col1 .first {
+    margin: 15px 0 15px -67px;
+  }
+
+  .logo-options .first img {
+    height: auto !important;
+    max-width: none;
+    width: 257px;
+  }
+
+  .fact-sheet img.talent.mobile-image {
+      display: block;
+      /*margin-top: -98px;*/
+  }
+
+  .fact-sheet img.talent.desktop-image {
+    display: none;
+  }
 
   .template_genericfullwidth header {
     position: relative;
@@ -378,10 +472,6 @@ footer .disclaimer-text, .logo-options .col1 .first img {
       font-size: 13px;
   }
 
-  .logo-options .col1 .first {
-      margin: 15px 0 15px 15px;
-  }
-
   p.content-description {
     font-size: 13px;
   }
@@ -393,3 +483,4 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     margin-top: 33px;
     height: 30px;
   }
+}
