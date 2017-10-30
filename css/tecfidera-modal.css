@@ -62,14 +62,68 @@
     margin-top: -35px;
 }
 
+.copyright.logo {
+    float: left;
+    height: 50px;
+}
+
+.copyright {
+    display: inherit;
+}
+
+img.biogen-arrow {
+    margin-left: -51px;
+    margin-top: -156px;
+}
+
+@media only screen and (min-width: 1884px){
+  .template_home .html .modal-dialog {
+    width: 60%;
+  }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 414px) {
   .template_home .html .modal-footer, .html .modal-header {
       font-size: 12px;
+  }
+
+  .template_home .html .modal-body, .template_home .html .modal-footer {
+    padding: 15px 20px 20px;
+  }
+
+  .template_home .html .modal-header .close {
+    margin-top: -35px;
+    width: 25px;
+  }
+
+  img.biogen-arrow {
+      margin-left: -21px;
+      margin-top: -140px;
   }
 }
 
 @media only screen and (max-width: 413px){
   .template_home .html .modal-footer, .html .modal-header {
       font-size: 12px;
+  }
+
+  .template_home .html .modal-body, .template_home .html .modal-footer {
+    padding: 15px 20px 20px;
+  }
+
+  .template_home .html .modal-header .close {
+    margin-top: -35px;
+    width: 25px;
+  }
+  img.biogen-arrow {
+    margin-left: -21px;
+    margin-top: -140px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) and (orientation : portrait){
+  .copyright.logo {
+    float: inherit;
   }
 }

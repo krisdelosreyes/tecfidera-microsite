@@ -39,11 +39,9 @@ header .mobile-menu-toggle, footer .disclaimer-text, .logo-options .col1 .first 
     min-width: 100%;
 }
 
-div.bxviewport{
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    height: 1155px;
+
+div.bx-viewport{
+    height: auto !important;
 }
 
 div.hero span.responsive-options img{
@@ -91,7 +89,7 @@ a.btn.btn-cta.responsive-options {
 }
 
 .back-to-top {
-    display: none;
+    display: none !;
 }
 
 footer {
@@ -140,6 +138,10 @@ footer .footer-links ul li {
     border-right: 0.5px solid white !important;
 }
 
+footer .back-to-top .icon-span {
+    background: #96a99e;
+}
+
 .template_genericfullwidth .footer-logo {
     margin-bottom: -10px;
     margin-top: 100px;
@@ -148,10 +150,6 @@ footer .footer-links ul li {
 .template_home .footer-logo {
     margin-bottom: -10px;
     margin-top: 50px;
-}
-
-footer .disclaimer-text, .logo-options .col1 .first img {
-  display: block;
 }
 
 @media only screen and (max-width: 1796px) and (min-width: 1161px) {
@@ -249,10 +247,6 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     border-radius: 15px;
   }
 
-  header .mobile-menu-toggle, footer .disclaimer-text, .logo-options .col1 .first img {
-      display: none;
-  }
-
   .bx-controls {
       text-align: right;
       right: 156px;
@@ -280,6 +274,14 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   .footer-logo img.logo-desktop {
     display: none;
   }
+
+  img.logo-mobile.tecfidera {
+      width: 240px;
+  }
+
+  img.logo-mobile.biogen {
+      width: 150px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -289,10 +291,6 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     margin: -20px 3px;
     border: 2px solid #a4a4a4;
     border-radius: 10px;
-  }
-
-  header .mobile-menu-toggle, footer .disclaimer-text, .logo-options .col1 .first img {
-      display: none;
   }
 
   .bx-controls {
@@ -343,9 +341,5 @@ footer .disclaimer-text, .logo-options .col1 .first img {
 
   img.logo-mobile.biogen {
     width: 120px;
-  }
-
-  header .mobile-menu-toggle, footer .disclaimer-text, .logo-options .col1 .first img {
-      display: none;
   }
 }
