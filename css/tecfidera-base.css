@@ -89,7 +89,7 @@ a.btn.btn-cta.responsive-options {
 }
 
 .back-to-top {
-    display: none !;
+    display: none !important;
 }
 
 footer {
@@ -123,15 +123,34 @@ footer .footer-links {
 footer .footer-links-container .footer-info {
 	text-align: center !important;
 	max-width: none !important;
+  font-family: "Arial Narrow", sans-serif;
+  color: #cfd6de;
+  font-size: 13px;
 }
+
+.footer-subtitle {
+    margin-bottom: 3px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
 
 footer .footer-links-container .logo-biogen, .template_home .content {
 	display: none;
 }
 
-footer .footer-links ul.mobile-footer-links a {
+footer .footer-links ul.mobile-footer-links a, footer .footer-links ul.desktop-footer-links a {
     color: #cfdae2 !important;
+}
+
+footer .footer-links ul.mobile-footer-links a{
     font-size: 16px;
+}
+
+footer .footer-links ul.desktop-footer-links a{
+  font-size: 13px;
 }
 
 footer .footer-links ul li {
@@ -217,7 +236,7 @@ footer .back-to-top .icon-span {
   }
 
 	footer .wrapper {
-		max-width: 80%;
+		max-width: 100%;
 	}
 
 	footer .footer-links ul li {
@@ -236,6 +255,7 @@ footer .back-to-top .icon-span {
     display: none;
   }
 }
+
 
 
 @media only screen and (max-width: 767px) and (min-width: 414px) {
@@ -336,10 +356,10 @@ footer .back-to-top .icon-span {
 
 @media only screen and (max-width: 375px) {
   img.logo-mobile.tecfidera {
-      width: 180px;
+      width: 170px;
   }
 
   img.logo-mobile.biogen {
-    width: 120px;
+    width: 110px;
   }
 }

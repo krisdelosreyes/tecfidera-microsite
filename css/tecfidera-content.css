@@ -8,11 +8,11 @@
   margin-right: 10px;
   float: left;
   height: 31px;
-  padding: 3px 3px 0 3px;
+  padding: 3px 3px 1px 3px;
 }
 
 .footer-logo {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 
@@ -33,7 +33,7 @@
     display: none;
 }
 
-.columncontrol.section {
+.columncontrol {
     margin-left: 36px;
     margin-right: 50px;
 }
@@ -45,32 +45,40 @@
   margin-bottom: 10px;
 }
 
-.start-nav-image .adaptiveimage figure img{
+.start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img{
   float: left;
   margin-left: -36px;
   margin-top: 86px;
   margin-bottom: 10px
 }
 
-p.content-title {
-    font-size: 20px;
+.end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
+  margin-left: -36px;
 }
 
-p.content-description {
-    font-size: 15px;
+.column-control-column {
+    font-family: "Arial", sans-serif;
 }
 
-.column-control-column .text.parbase.section, .nav-image .title.base.parbase.section {
+.content-subtitle {
+    font-size: 16px;
+}
+
+.content-description {
+    font-size: 14px;
+}
+
+.column-control-column .text, .nav-image .title {
   margin-top: 20px;
   margin-bottom: 298px;
   display: block;
 }
 
-.columncontrol.section .column-control-column .text.parbase.section{
+.columncontrol .column-control-column .text{
   margin-bottom: 100px;
 }
 
-.columncontrol.section .teasertile.base.parbase.section {
+.columncontrol .teasertile {
     margin-bottom: 166px;
 }
 
@@ -82,11 +90,12 @@ p.content-description {
     margin-top: 20px;
     width: 247px;
     height: 40px;
-    border: 1px solid #d3d3d3;
-    box-shadow: 0 0 1em grey;
+    border: none;
+    -webkit-box-shadow: none;
+    /*box-shadow: 0 0 1em grey;
     -webkit-box-shadow: 0 0 1em grey;
     -moz-box-shadow: 0 0 1em gray;
-    /*box-shadow: none; /**
+    box-shadow: none;
     -webkit-box-shadow: none;*/
 
 }
@@ -100,13 +109,14 @@ p.content-description {
     margin-top: -73px;
 }
 
-.nav-image .calltoaction .tysabri-promo-container.last {
+.nav-image .calltoaction .last {
     float: right;
 }
 
-.nav-image .calltoaction div#cta-type-3 {
+/*
+#cta-type-3 {
   margin-left: -34px;
-}
+}*/
 
 .content-subtitle{
   color: #0088cf;
@@ -114,22 +124,22 @@ p.content-description {
 }
 
 .media .media-body {
-  text-align: justify !important;
-  display: initial;
+  text-align: justify;
+  display: inline;
 }
 
-.generic-page .columncontrol.section {
+.generic-page .columncontrol {
     margin-left: 70px;
     margin-right: 50px;
 }
 
-.columncontrol.section .column-control-column .columncontrol.section {
+.columncontrol .column-control-column .columncontrol {
     margin-left: 3px;
     margin-top: 20px;
     margin-right: 50px;
 }
 
-.title.base.parbase.section {
+.title {
     margin-top: 20px;
 }
 
@@ -143,13 +153,13 @@ p.content-description {
     margin-right: auto;
 }
 
-.fact-sheet img.talent.desktop-image {
+.fact-sheet .desktop-image {
   display: block;
   margin-top: -208px;
   z-index: 1;
 }
 
-.fact-sheet img.talent.desktop-image.default{
+.fact-sheet .default{
   margin-top: -176px;
 }
 
@@ -157,7 +167,7 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   display: block;
 }
 
-.teasertile h3.h5.media-heading {
+.teasertile .media-heading {
     margin-bottom: -17px;
 }
 
@@ -165,56 +175,100 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     margin-top: 30px;
 }
 
+p.content-subtitle {
+    font-size: 15px;
+}
+
+p.content-description {
+  font-size: 14px;
+}
+
 @media only screen and (min-width: 2050px) {
   .nav-image .calltoaction .tysabri-promo-container{
     margin-right: 501px;
   }
 
-  .fact-sheet img.talent.mobile-image {
+  .fact-sheet .mobile-image {
     display: none;
   }
 
-  .start-nav-image .adaptiveimage figure img {
+  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
       float: left;
       margin-left: -70px;
-      margin-top: 110px;
+      margin-top: 306px;
       margin-bottom: 10px;
   }
 
+  .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
+    margin-left: -36px;
+  }
 }
 
-@media only screen and (max-width: 2049px) and (min-width: 1797px) {
+@media only screen and (max-width: 2049px) and (min-width: 1949px) {
   .nav-image .calltoaction .tysabri-promo-container{
-    margin-right: 351px;
+    margin-right: 420px;
   }
 
-  .fact-sheet img.talent.mobile-image {
+  .fact-sheet .mobile-image {
     display: none;
   }
 
-  .columncontrol.section .column-control-column .text.parbase.section{
+  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
+      float: left;
+      margin-left: -70px;
+      margin-top: 306px;
+      margin-bottom: 10px;
+  }
+
+  .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
+    margin-left: -36px;
+  }
+}
+
+@media only screen and (max-width: 1948px) and (min-width: 1759px) {
+  .nav-image .calltoaction .tysabri-promo-container{
+    margin-right: 322px;
+  }
+
+  .fact-sheet .mobile-image {
+    display: none;
+  }
+
+  .columncontrol .column-control-column .text{
     margin-bottom: 20px;
   }
 
-  .columncontrol.section .teasertile.base.parbase.section {
+  .columncontrol .teasertile {
       margin-bottom: 20px;
   }
 
-  .start-nav-image .adaptiveimage figure img {
+  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
       float: left;
       margin-left: -70px;
-      margin-top: 110px;
+      margin-top: 306px;
       margin-bottom: 10px;
+  }
+
+  .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
+    margin-left: -36px;
   }
 }
 
 
-@media only screen and (max-width: 1796px) and (min-width: 1495px) {
-  .columncontrol.section .column-control-column .text.parbase.section{
+@media only screen and (max-width: 1758px) and (min-width: 1495px) {
+  .content-subtitle {
+      font-size: 14px;
+  }
+
+  .content-description {
+    font-size: 13px;
+  }
+
+  .columncontrol .column-control-column .text{
     margin-bottom: 10px;
   }
 
-  .columncontrol.section .teasertile.base.parbase.section {
+  .columncontrol .teasertile {
       margin-bottom: 10px;
   }
 
@@ -234,29 +288,32 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   }
 
   .nav-image .calltoaction .tysabri-promo-container {
-    margin-right: 230px;
+    margin-right: 160px;
   }
 
-  .fact-sheet img.talent.mobile-image {
+  .fact-sheet .mobile-image {
     display: none;
   }
 
-  .start-nav-image .adaptiveimage figure img {
+  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
       float: left;
       margin-left: -70px;
-      margin-top: 110px;
+      margin-top: 306px;
       margin-bottom: 10px;
   }
 
+  .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
+    margin-left: -36px;
+  }
 }
 
 
 @media only screen and (max-width: 1494px) and (min-width: 1161px) {
-  .columncontrol.section .column-control-column .text.parbase.section{
+  .columncontrol .column-control-column .text{
     margin-bottom: 10px;
   }
 
-  .columncontrol.section .teasertile.base.parbase.section {
+  .columncontrol .teasertile {
       margin-bottom: 10px;
   }
 
@@ -273,19 +330,6 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     margin-right: 140px;
   }
 
-  .fact-sheet img.talent.desktop-image {
-    display: block;
-    margin-top: 200px;
-    z-index: 1;
-  }
-
-  .start-nav-image .adaptiveimage figure img {
-      float: left;
-      margin-left: -70px;
-      margin-top: 110px;
-      margin-bottom: 10px;
-  }
-
   .nav-image .adaptiveimage figure img {
     float: left;
     margin-left: -36px;
@@ -293,13 +337,28 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     margin-bottom: 10px;
   }
 
-  .fact-sheet img.talent.mobile-image {
+  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
+      float: left;
+      margin-left: -70px;
+      margin-top: 306px;
+      margin-bottom: 10px;
+  }
+
+  .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
+    margin-left: -36px;
+  }
+
+  .stay-well .adaptiveimage figure img {
+    margin-top: 125px;
+  }
+
+  .fact-sheet .mobile-image {
     display: none;
   }
 
-  .fact-sheet img.talent.desktop-image {
+  .fact-sheet .desktop-image {
     display: block;
-    margin-top: -160px;
+    margin-top: -170px;
     z-index: 1;
   }
 
@@ -324,67 +383,98 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     margin-right: 150px;
   }
 
-  .fact-sheet img.talent.desktop-image {
-      display: block;
-      z-index: 1;
-  }
-
-  .fact-sheet img.talent.mobile-image {
-    display: none;
-  }
-
-  .fact-sheet img.talent.desktop-image {
+  .fact-sheet .desktop-image {
+    display: block;
+    z-index: 1;
     margin-top: -160px;
+  }
+
+  .fact-sheet .mobile-image {
+    display: none;
   }
 
   .nav-image .adaptiveimage figure img {
     margin-top: -42px;
   }
 
-  .columncontrol.section .column-control-column .text.parbase.section{
+  .columncontrol .column-control-column .text{
     margin-bottom: 40px;
   }
 
-  .columncontrol.section .teasertile.base.parbase.section {
+  .columncontrol .teasertile {
       margin-bottom: 10px;
   }
 
-  .start-nav-image .adaptiveimage figure img {
+  .nav-image .adaptiveimage figure img {
+    float: left;
+    margin-left: -36px;
+    margin-top: 54px;
+    margin-bottom: 10px;
+  }
+
+  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img  {
       float: left;
       margin-left: -70px;
-      margin-top: 25px;
+      margin-top: 74px;
       margin-bottom: 10px;
   }
+
+  .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
+    margin-left: -36px;
+  }
+
 }
 
-@media only screen and (max-width: 1160px) and (min-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 1160px) and (min-width: 1010px) and (orientation: landscape) {
 
-  .fact-sheet-image div.image.adaptiveimage {
+  .fact-sheet-image .adaptiveimage {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: -15px;
   }
 
+  .fact-sheet-image .section .talent {
+    max-width: none;
+  }
+
+}
+
+@media only screen and (max-width: 1009px) and (min-width: 769px){
+  .columncontrol .column-control-column .columncontrol .col-md-4 {
+      width: 100%;
+      text-align: justify;
+  }
+
+  fact-sheet-image .section img.talent {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 1160px) and (min-width: 768px) and (orientation: portrait) {
   .fact-sheet img {
-    height: auto !important;
+    height: auto;
     max-width: none;
-    width: auto !important;
+    width: auto;
   }
 
-  .fact-sheet-image .section img.talent {
+  .fact-sheet-image .section .talent {
       margin-left: -40px;
+  }
+
+  .nav-image {
+    margin-top: 60px;
   }
 
 }
 
 
 @media only screen and (max-width: 767px) and (min-width: 414px) {
-  .fact-sheet img.talent.mobile-image {
+  .fact-sheet .mobile-image {
     display: block;
   }
 
-  .fact-sheet img.talent.desktop-image {
+  .fact-sheet .desktop-image {
     display: none;
   }
 
@@ -400,7 +490,7 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     display: block !important;
   }
 
-  .fact-sheet-image div.image.adaptiveimage {
+  .fact-sheet-image .adaptiveimage {
     margin-bottom: -15px;
   }
 
@@ -414,12 +504,12 @@ footer .disclaimer-text, .logo-options .col1 .first img {
       z-index: 0;
   }
 
-  .generic-page .columncontrol.section {
+  .generic-page .columncontrol {
       margin-left: 15px;
       margin-right: 20px;
   }
 
-  p.content-title {
+  .content-title {
       font-size: 13px;
   }
 
@@ -427,32 +517,31 @@ footer .disclaimer-text, .logo-options .col1 .first img {
       margin: 15px 0 15px 15px;
   }
 
-  .columncontrol.section .column-control-column .text.parbase.section {
-    margin-bottom: 0px;
+  .columncontrol .column-control-column .text {
+    margin-bottom: 0;
     font-size: 12px;
   }
 
-  p.content-description {
+  .content-description {
     font-size: 13px;
   }
 
   .nav-image .calltoaction .tysabri-promo-container {
-      margin-right: 40px;
+    margin-right: -8px;
+    margin-top: -65px;
   }
 
-  .columncontrol.section .column-control-column .columncontrol.section {
-    margin-left: 0px;
+  .columncontrol .column-control-column .columncontrol {
+    margin: 0;
     margin-top: 20px;
-    margin-right: 0px;
-    margin-bottom: 0px;
     font-size: 12px;
   }
 
   .template_genericfullwidth .footer-logo {
-      margin-top: 0px;
+      margin-top: 0;
   }
 
-  .columncontrol.section .teasertile.base.parbase.section {
+  .columncontrol .teasertile {
     margin-bottom: 10px;
   }
 }
@@ -464,20 +553,20 @@ footer .disclaimer-text, .logo-options .col1 .first img {
       width: 130px;
   }
   .nav-image .adaptiveimage figure img {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 414px) and (orientation: landscape){
   .nav-image .calltoaction .tysabri-cta {
-    margin-top: 0px;
+    margin-top: 0;
     height: 62px;
     width: 170px;
   }
 
   .nav-image .adaptiveimage figure img {
     margin-left: -4px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
@@ -493,17 +582,16 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   }
 
   .logo-options .first img {
-      height: auto !important;
       max-width: none;
       width: 330px;
   }
 
-  .fact-sheet img.talent.mobile-image {
+  .fact-sheet .mobile-image {
       display: block;
       /*margin-top: -98px;*/
   }
 
-  .fact-sheet img.talent.desktop-image {
+  .fact-sheet .desktop-image {
     display: none;
   }
 
@@ -512,8 +600,12 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     z-index: 1;
   }
 
+  .teasertile .media-heading {
+    margin-bottom: -15px;
+  }
+
   .teasertile .media .media-body p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .hidden-xs {
@@ -525,35 +617,33 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   }
 
   .fact-sheet-image .adaptiveimage figure img {
-      margin-top: 0px;
+      margin-top: 0;
       z-index: 0;
   }
 
-  .columncontrol.section .column-control-column .columncontrol.section {
-    margin-left: 0px;
+  .columncontrol .column-control-column .columncontrol {
+    margin: 0;
     margin-top: 20px;
-    margin-right: 0px;
-    margin-bottom: 0px;
     font-size: 12px;
   }
 
-  .generic-page .columncontrol.section {
+  .generic-page .columncontrol {
       margin-left: 15px;
       margin-right: 20px;
   }
 
   .nav-image .adaptiveimage figure img {
     float: left;
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
     margin-bottom: 10px;
   }
 
-  p.content-title {
+  .content-title {
       font-size: 13px;
   }
 
-  p.content-description {
+  .content-description {
     font-size: 13px;
   }
 
@@ -568,10 +658,10 @@ footer .disclaimer-text, .logo-options .col1 .first img {
   }
 
   .template_genericfullwidth .footer-logo {
-      margin-top: 0px;
+      margin-top: 0;
   }
 
-  .columncontrol.section .teasertile.base.parbase.section {
+  .columncontrol .teasertile {
     margin-bottom: 10px;
   }
 
