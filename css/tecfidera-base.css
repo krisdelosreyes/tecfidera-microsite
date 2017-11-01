@@ -1,6 +1,29 @@
-.template_genericfullwidth .content {
-    padding: 0;
+@font-face {
+ font-family: 'DinPro MedItalic';
+ src: url('/content/dam/commercial-au/neurology/planforthepossible/pat/en_nz/fonts/DINPro-MediumItalic.otf') format("opentype");
 }
+
+@font-face {
+ font-family: 'DinPro Bold';
+ src: url('/content/dam/commercial-au/neurology/planforthepossible/pat/en_nz/fonts/DINPro-Bold.otf') format("opentype");
+}
+
+@font-face {
+ font-family: 'DinPro Light';
+ src: url('/content/dam/commercial-au/neurology/planforthepossible/pat/en_nz/fonts/DINPro-Light.otf') format("opentype");
+}
+
+@font-face {
+ font-family: 'DinPro';
+ src: url('/content/dam/commercial-au/neurology/planforthepossible/pat/en_nz/fonts/DINPro.otf') format("opentype");
+}
+
+@font-face {
+ font-family: 'HelveticaNeu';
+ src: url('/content/dam/commercial-au/neurology/planforthepossible/pat/en_nz/fonts/HelveticaNeue-ThinCond.otf') format("opentype");
+}
+
+
 
 .main.generic-page.full-width {
     background: linear-gradient(to left, rgb(234, 225, 155) 0%, rgb(245, 239, 218) 0%, rgb(251, 249, 238) 20%, rgb(234, 234, 227) 100%);
@@ -18,6 +41,11 @@ header .logo-options, footer, header .utility-nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#969696', endColorstr='#a8a8a8', GradientType=1 );
 }
 
+.logo-options .wrapper {
+  margin-bottom: 0;
+  height: 120px;
+}
+
 .logo-options .col1 .first a {
     max-width: 100%;
     margin: 0;
@@ -28,10 +56,19 @@ header .mobile-menu-toggle, footer .disclaimer-text, .logo-options .col1 .first 
     display: none;
 }
 
+body{
+  font-family: "DinPro Light" !important;
+}
+
 .template_home .carousel {
     margin-top: -2px;
     margin-bottom: 0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.template_genericfullwidth .content {
+    padding: 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .carousel .wrapper {
@@ -94,6 +131,7 @@ a.btn.btn-cta.responsive-options {
 
 footer {
 	border-bottom: 30px solid #04a0d6;
+  padding: 0 0 10px;
 }
 
 footer .footerSocialIcons {
@@ -109,7 +147,7 @@ footer .logo-biogen {
 }
 
 footer, footer a {
-	color: #fff;
+  #cfdae2;
 }
 
 footer .siteMapFooter-links {
@@ -117,15 +155,19 @@ footer .siteMapFooter-links {
 }
 
 footer .footer-links {
-    text-align: center;
+  text-align: center;
+  margin-top: -12px;
 }
 
 footer .footer-links-container .footer-info {
 	text-align: center !important;
 	max-width: none !important;
-  font-family: "Arial Narrow", sans-serif;
+  font-family: "HelveticaNeu";
   color: #cfd6de;
-  font-size: 13px;
+}
+
+footer .contact-us-footer {
+    display: none !important;
 }
 
 .footer-subtitle {
@@ -143,6 +185,7 @@ footer .footer-links-container .logo-biogen, .template_home .content {
 
 footer .footer-links ul.mobile-footer-links a, footer .footer-links ul.desktop-footer-links a {
     color: #cfdae2 !important;
+    font-family: "DinPro" !important;
 }
 
 footer .footer-links ul.mobile-footer-links a{
@@ -150,7 +193,7 @@ footer .footer-links ul.mobile-footer-links a{
 }
 
 footer .footer-links ul.desktop-footer-links a{
-  font-size: 13px;
+  font-size: 16px;
 }
 
 footer .footer-links ul li {
@@ -161,23 +204,58 @@ footer .back-to-top .icon-span {
     background: #96a99e;
 }
 
+footer .logo-desktop.tecfidera {
+    width: 240px
+}
+
+footer .logo-desktop.biogen {
+    margin-top: -14px;
+    width: 145px;
+}
+
+footer .footer-links-container{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer .footer-content {
+    font-size: 11px;
+}
+
+.template_home .footer-logo {
+  margin-bottom: -15px;
+  margin-top: 50px;
+  width: auto;
+}
+
 .template_genericfullwidth .footer-logo {
     margin-bottom: -10px;
     margin-top: 100px;
 }
 
-.template_home .footer-logo {
-    margin-bottom: -10px;
-    margin-top: 50px;
+.template_genericfullwidth footer ul {
+    margin: 0 0 5px;
 }
 
+footer .footer-links-container p a {
+    color: #f5f1f0 !important;
+}
+
+
+/*
 @media only screen and (max-width: 1796px) and (min-width: 1161px) {
   footer .wrapper {
 		max-width: 80%;
 	}
-}
 
-@media only screen and (min-width: 1023px) {
+  footer .footer-links ul li {
+	  border-right: 0.5px solid white !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+	}
+}*/
+
+@media only screen and (min-width: 1335px){
   .bx-pager a {
     width: 25px;
     height: 25px;
@@ -186,18 +264,77 @@ footer .back-to-top .icon-span {
     border-radius: 15px;
   }
 
+  .footer-subtitle .footer-info b {
+    font-size: 1vw;
+  }
+
+  footer .footer-links ul.desktop-footer-links a {
+        font-size: 1.1vw;
+  }
+
+  footer .footer-content, footer .footer-links-container .footer-info {
+    font-size: 0.8vw !important;
+  }
+
   .bx-controls .slider-pager {
       margin: 0 -18.75em;
   }
 
-	footer .wrapper {
-		max-width: 90%;
-	}
+  footer .wrapper {
+    max-width: 96%;
+  }
 
 	footer .footer-links ul li {
 	  border-right: 0.5px solid white !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+	}
+	footer .footer-links ul li:last-child {
+	    border-right: none !important;
+	}
+	footer .footer-links ul.desktop-footer-links {
+		display: inline-block !important;
+	}
+
+  .footer-logo img.logo-mobile {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1335px) and (min-width: 1025px) {
+  .bx-pager a {
+    width: 25px;
+    height: 25px;
+    margin: -5px 3px;
+    border: 4px solid #a4a4a4;
+    border-radius: 15px;
+  }
+
+  footer .footer-links ul.desktop-footer-links a {
+        font-size: 1.3vw;
+  }
+
+  .footer-subtitle .footer-info b {
+      font-size: 1.2vw;
+  }
+
+  footer .footer-content, footer .footer-links-container .footer-info {
+    font-size: 1vw !important;
+  }
+
+  .bx-controls .slider-pager {
+      margin: 0 -18.75em;
+  }
+
+  footer .wrapper {
+    max-width: 96%;
+  }
+
+	footer .footer-links ul li {
+	  border-right: 0.5px solid white !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 	}
 	footer .footer-links ul li:last-child {
 	    border-right: none !important;
@@ -213,6 +350,47 @@ footer .back-to-top .icon-span {
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .template_home .footer-logo {
+    margin-top: 75px;
+  }
+
+  footer .footer-links ul.desktop-footer-links a {
+    font-size: 1.45vw;
+  }
+
+  footer .footer-content, footer .footer-links-container .footer-info {
+    font-size: 1.1vw !important;
+  }
+
+  footer .logo-desktop.tecfidera {
+    width: 220px;
+  }
+
+  footer .logo-desktop.biogen {
+    margin-top: -14px;
+    width: 135px;
+  }
+
+  footer .wrapper {
+    max-width: 100%;
+  }
+
+  footer .footer-links ul li {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+  }
+
+  footer .footer-links ul li:last-child {
+      border-right: none !important;
+  }
+  footer .footer-links ul.desktop-footer-links {
+    display: inline-block !important;
+  }
+
+  .footer-logo img.logo-mobile {
+    display: none;
+  }
+
   .bx-pager a {
     width: 20px;
     height: 20px;
@@ -230,35 +408,73 @@ footer .back-to-top .icon-span {
       right: 156px;
       bottom: 20px;
   }
+}
 
-  footer {
-    font-size: 1.3vw;
+@media only screen and (max-width: 767px) and (min-width: 621px) {
+  .template_home .footer-logo {
+    margin-top: 75px;
   }
 
-	footer .wrapper {
-		max-width: 100%;
-	}
+  footer .footer-links ul.desktop-footer-links a {
+    font-size: 1.4vw;
+  }
 
-	footer .footer-links ul li {
-	    border-right: 0.5px solid white !important;
-			padding-left: 9px !important;
-      padding-right: 11px !important;
-	}
+  footer .footer-content, footer .footer-links-container .footer-info {
+    font-size: 1.1vw !important;
+  }
 
-	footer .footer-links ul li:last-child {
-	    border-right: none !important;
-	}
-	footer .footer-links ul.desktop-footer-links {
-		display: inline-block !important;
-	}
-  .footer-logo img.logo-mobile {
-    display: none;
+  footer .logo-desktop.tecfidera {
+    width: 220px;
+  }
+
+  footer .logo-desktop.biogen {
+    margin-top: -14px;
+    width: 135px;
+  }
+
+  footer .wrapper {
+    max-width: 100%;
+  }
+
+  footer .footer-links ul li {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+  }
+
+  footer .footer-links ul li:last-child {
+      border-right: none !important;
+  }
+
+  footer .footer-links ul.desktop-footer-links {
+    display: inline-block !important;
+  }
+
+  footer .footer-links ul.mobile-footer-links, .footer-logo img.logo-mobile {
+    display: none !important;
+  }
+
+  .bx-pager a {
+    width: 20px;
+    height: 20px;
+    margin: -5px 3px;
+    border: 3px solid #a4a4a4;
+    border-radius: 15px;
+  }
+
+  .bx-controls .slider-pager {
+    margin: 0 5.25em;
+  }
+
+  .bx-controls {
+      text-align: right;
+      right: 156px;
+      bottom: 20px;
   }
 }
 
 
 
-@media only screen and (max-width: 767px) and (min-width: 414px) {
+@media only screen and (max-width: 620px) and (min-width: 414px) {
   .bx-pager a {
     width: 20px;
     height: 20px;
@@ -291,16 +507,16 @@ footer .back-to-top .icon-span {
     padding: 10px;
 	}
 
-  .footer-logo img.logo-desktop {
-    display: none;
-  }
-
   img.logo-mobile.tecfidera {
       width: 240px;
   }
 
   img.logo-mobile.biogen {
       width: 150px;
+  }
+
+  .footer-logo img.logo-desktop {
+    display: none;
   }
 }
 

@@ -1,20 +1,35 @@
 .num-ways {
   border-radius: 50%;
-  background-color: #0d91e0;
-  font-size: 18px;
+  background-color: #0088cf;
+  font-size: 20px;
+  font-weight: bolder;
   text-align: center;
   color: white;
-  width: 31px;
+  width: 40px;
   margin-right: 10px;
   float: left;
-  height: 31px;
-  padding: 3px 3px 1px 3px;
+  height: 40px;
+  padding: 5px 3px 0px 3px;
+}
+
+body{
+  font-family: "DinPro Light" !important;
+  color: #4a4b4f;
+}
+
+.logo-options .wrapper {
+    margin-bottom: -1px;
 }
 
 .footer-logo {
     margin-top: 0;
 }
 
+.title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "DinPro Bold";
+}
 
 .carousel .wrapper {
     position: relative;
@@ -23,10 +38,6 @@
 
 .logo-options .col1 .first {
     margin: 15px 0 15px -271px;
-}
-
-.content .main .adaptiveimage figure img {
-    width: auto;
 }
 
 .page-header-generic {
@@ -54,10 +65,6 @@
 
 .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
   margin-left: -36px;
-}
-
-.column-control-column {
-    font-family: "Arial", sans-serif;
 }
 
 .content-subtitle {
@@ -140,7 +147,11 @@
 }
 
 .title {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+.page_ready-to-start-planning .column-control-column .title{
+  margin-top: 65px;
 }
 
 .template_genericfullwidth header {
@@ -172,7 +183,7 @@ footer .disclaimer-text, .logo-options .col1 .first img {
 }
 
 .template_genericfullwidth .footer-logo {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 p.content-subtitle {
@@ -180,7 +191,7 @@ p.content-subtitle {
 }
 
 p.content-description {
-  font-size: 14px;
+  font-size: 17px;
 }
 
 @media only screen and (min-width: 2050px) {
@@ -226,6 +237,10 @@ p.content-description {
 }
 
 @media only screen and (max-width: 1948px) and (min-width: 1759px) {
+  .logo-options .col1 .first {
+    margin: 30px 0 15px -340px;
+  }
+
   .nav-image .calltoaction .tysabri-promo-container{
     margin-right: 322px;
   }
@@ -236,6 +251,17 @@ p.content-description {
 
   .columncontrol .column-control-column .text{
     margin-bottom: 20px;
+    width: 80%;
+    font-size: 1vw;
+  }
+
+  p.content-description {
+    font-size: 1.3vw;
+  }
+
+  .title h1 {
+    font-size: 2vw;
+
   }
 
   .columncontrol .teasertile {
@@ -245,8 +271,15 @@ p.content-description {
   .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
       float: left;
       margin-left: -70px;
-      margin-top: 306px;
       margin-bottom: 10px;
+  }
+
+  .nav-image .adaptiveimage figure img {
+    margin-top: 20px;
+  }
+
+  .page_ready-to-start-planning .start-nav-image .adaptiveimage figure img{
+        margin-top: 100px;
   }
 
   .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
@@ -256,6 +289,14 @@ p.content-description {
 
 
 @media only screen and (max-width: 1758px) and (min-width: 1495px) {
+  .logo-options .col1 .first {
+      margin: 30px 0 15px -220px;
+  }
+
+  .num-ways {
+    margin-bottom: 30px;
+  }
+
   .content-subtitle {
       font-size: 14px;
   }
@@ -266,6 +307,7 @@ p.content-description {
 
   .columncontrol .column-control-column .text{
     margin-bottom: 10px;
+    font-size: 1.4vw;
   }
 
   .columncontrol .teasertile {
@@ -298,8 +340,11 @@ p.content-description {
   .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
       float: left;
       margin-left: -70px;
-      margin-top: 306px;
       margin-bottom: 10px;
+  }
+
+  .page_ready-to-start-planning .start-nav-image .adaptiveimage figure img{
+        margin-top: 114px;
   }
 
   .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
@@ -309,8 +354,14 @@ p.content-description {
 
 
 @media only screen and (max-width: 1494px) and (min-width: 1161px) {
+
+  .logo-options .col1 .first {
+      margin: 30px 0 15px -30px;
+  }
+
   .columncontrol .column-control-column .text{
     margin-bottom: 10px;
+    font-size: 1.3vw;
   }
 
   .columncontrol .teasertile {
@@ -322,10 +373,6 @@ p.content-description {
     z-index: 0;
   }
 
-  .logo-options .col1 .first {
-    margin: 15px 0 15px -29px;
-  }
-
   .nav-image .calltoaction .tysabri-promo-container {
     margin-right: 140px;
   }
@@ -333,15 +380,18 @@ p.content-description {
   .nav-image .adaptiveimage figure img {
     float: left;
     margin-left: -36px;
-    margin-top: 54px;
+    margin-top: 30px;
     margin-bottom: 10px;
   }
 
   .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
       float: left;
       margin-left: -70px;
-      margin-top: 306px;
       margin-bottom: 10px;
+  }
+
+  .page_ready-to-start-planning .start-nav-image .adaptiveimage figure img{
+        margin-top: 122px;
   }
 
   .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
@@ -364,14 +414,52 @@ p.content-description {
 
 }
 
-@media only screen and (max-width: 1160px) and (min-width: 768px){
+@media only screen and (max-width: 1160px) and (min-width: 768px) and (orientation: portrait) {
+  .fact-sheet img {
+    height: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  .fact-sheet-image .section .talent {
+      margin-left: -40px;
+  }
+
+  .nav-image {
+    margin-top: 60px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1160px) and (min-width: 1010px) and (orientation: landscape) {
+
+  .fact-sheet-image .adaptiveimage {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -15px;
+  }
+
+  .fact-sheet-image .section .talent {
+    max-width: none;
+  }
+
+  .columncontrol .column-control-column .text {
+    margin-bottom: 0;
+    font-size: 1.7vw;
+  }
+
+  .num-ways {
+    margin-bottom: 48px;
+  }
+
   .template_genericfullwidth header {
     position: relative;
     z-index: 0;
   }
 
   .logo-options .col1 .first {
-      margin: 15px 0 15px 15px;
+    margin: 30px 0 15px 50px;
   }
 
   .nav-image .calltoaction .tysabri-cta {
@@ -408,33 +496,22 @@ p.content-description {
   .nav-image .adaptiveimage figure img {
     float: left;
     margin-left: -36px;
-    margin-top: 54px;
+    margin-top: -30px;
     margin-bottom: 10px;
   }
 
   .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img  {
       float: left;
       margin-left: -70px;
-      margin-top: 74px;
       margin-bottom: 10px;
+  }
+
+  .page_ready-to-start-planning .start-nav-image .adaptiveimage figure img{
+        margin-top: 54px;
   }
 
   .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
     margin-left: -36px;
-  }
-
-}
-
-@media only screen and (max-width: 1160px) and (min-width: 1010px) and (orientation: landscape) {
-
-  .fact-sheet-image .adaptiveimage {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -15px;
-  }
-
-  .fact-sheet-image .section .talent {
-    max-width: none;
   }
 
 }
@@ -449,29 +526,85 @@ p.content-description {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .columncontrol .column-control-column .text {
+    margin-bottom: 0;
+    font-size: 1.7vw;
+  }
+
+  .num-ways {
+    margin-bottom: 30px;
+  }
+
+  .template_genericfullwidth header {
+    position: relative;
+    z-index: 0;
+  }
+
+  .logo-options .col1 .first {
+    margin: 30px 0 15px 50px;
+  }
+
+  .nav-image .calltoaction .tysabri-cta {
+    margin-top: 30px;
+    height: 30px;
+  }
+
+  .nav-image .calltoaction .tysabri-promo-container {
+    margin-right: 150px;
+  }
+
+  .fact-sheet .desktop-image {
+    display: block;
+    z-index: 1;
+    margin-top: -160px;
+  }
+
+  .fact-sheet .mobile-image {
+    display: none;
+  }
+
+  .nav-image .adaptiveimage figure img {
+    margin-top: -42px;
+  }
+
+  .columncontrol .column-control-column .text{
+    margin-bottom: 40px;
+  }
+
+  .columncontrol .teasertile {
+      margin-bottom: 10px;
+  }
+
+  .nav-image .adaptiveimage figure img {
+    float: left;
+    margin-left: -36px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }
+
+  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img  {
+      float: left;
+      margin-left: -70px;
+      margin-bottom: 10px;
+  }
+
+  .page_ready-to-start-planning .start-nav-image .adaptiveimage figure img{
+        margin-top: 54px;
+  }
+
+  .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
+    margin-left: -36px;
+  }
+
 }
 
-@media only screen and (max-width: 1160px) and (min-width: 768px) and (orientation: portrait) {
-  .fact-sheet img {
-    height: auto;
-    max-width: none;
-    width: auto;
-  }
 
-  .fact-sheet-image .section .talent {
-      margin-left: -40px;
-  }
-
-  .nav-image {
-    margin-top: 60px;
-  }
-
-}
 
 
 @media only screen and (max-width: 767px) and (min-width: 414px) {
   .fact-sheet .mobile-image {
-    display: block;
+      display: block;
   }
 
   .fact-sheet .desktop-image {
@@ -519,7 +652,11 @@ p.content-description {
 
   .columncontrol .column-control-column .text {
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 2.5vw;
+  }
+
+  .columncontrol .column-control-column {
+    font-size: 2vw;
   }
 
   .content-description {
@@ -554,6 +691,10 @@ p.content-description {
   }
   .nav-image .adaptiveimage figure img {
     margin-left: 0;
+  }
+
+  .nav-image .adaptiveimage figure img {
+    margin-top: 40px;
   }
 }
 
