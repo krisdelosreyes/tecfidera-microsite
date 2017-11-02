@@ -188,8 +188,8 @@ footer .footer-links ul.mobile-footer-links a, footer .footer-links ul.desktop-f
     font-family: "DinPro" !important;
 }
 
-footer .footer-links ul.mobile-footer-links a{
-    font-size: 16px;
+footer .footer-links ul.mobile-footer-links a {
+    font-size: 25px;
 }
 
 footer .footer-links ul.desktop-footer-links a{
@@ -264,16 +264,18 @@ footer .footer-links-container p a {
     border-radius: 15px;
   }
 
-  .footer-subtitle .footer-info b {
-    font-size: 1vw;
+  footer .footer-links ul.desktop-footer-links a {
+      font-size: 21px;
   }
 
-  footer .footer-links ul.desktop-footer-links a {
-        font-size: 1.1vw;
+  .footer-subtitle .footer-info b {
+    font-size: 17px;
+    letter-spacing: 0.5px;
   }
 
   footer .footer-content, footer .footer-links-container .footer-info {
-    font-size: 0.8vw !important;
+    font-size: 15px !important;
+    letter-spacing: 0.5px;
   }
 
   .bx-controls .slider-pager {
@@ -312,15 +314,17 @@ footer .footer-links-container p a {
   }
 
   footer .footer-links ul.desktop-footer-links a {
-        font-size: 1.3vw;
+      font-size: 15px;
   }
 
   .footer-subtitle .footer-info b {
-      font-size: 1.2vw;
+    font-size: 13px;
+    letter-spacing: 0.5px;
   }
 
   footer .footer-content, footer .footer-links-container .footer-info {
-    font-size: 1vw !important;
+    font-size: 12px !important;
+    letter-spacing: 0.5px;
   }
 
   .bx-controls .slider-pager {
@@ -358,8 +362,14 @@ footer .footer-links-container p a {
     font-size: 1.45vw;
   }
 
+  .footer-subtitle .footer-info b {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+
   footer .footer-content, footer .footer-links-container .footer-info {
-    font-size: 1.1vw !important;
+    font-size: 12px !important;
+    letter-spacing: 0.5px;
   }
 
   footer .logo-desktop.tecfidera {
@@ -411,58 +421,12 @@ footer .footer-links-container p a {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 621px) {
-  .template_home .footer-logo {
-    margin-top: 75px;
-  }
-
-  footer .footer-links ul.desktop-footer-links a {
-    font-size: 1.4vw;
-  }
-
-  footer .footer-content, footer .footer-links-container .footer-info {
-    font-size: 1.1vw !important;
-  }
-
-  footer .logo-desktop.tecfidera {
-    width: 220px;
-  }
-
-  footer .logo-desktop.biogen {
-    margin-top: -14px;
-    width: 135px;
-  }
-
-  footer .wrapper {
-    max-width: 100%;
-  }
-
-  footer .footer-links ul li {
-      padding-left: 15px !important;
-      padding-right: 15px !important;
-  }
-
-  footer .footer-links ul li:last-child {
-      border-right: none !important;
-  }
-
-  footer .footer-links ul.desktop-footer-links {
-    display: inline-block !important;
-  }
-
-  footer .footer-links ul.mobile-footer-links, .footer-logo img.logo-mobile {
-    display: none !important;
-  }
-
   .bx-pager a {
     width: 20px;
     height: 20px;
-    margin: -5px 3px;
-    border: 3px solid #a4a4a4;
+    margin: 0 3px;
+    border: 2px solid #a4a4a4;
     border-radius: 15px;
-  }
-
-  .bx-controls .slider-pager {
-    margin: 0 5.25em;
   }
 
   .bx-controls {
@@ -470,6 +434,49 @@ footer .footer-links-container p a {
       right: 156px;
       bottom: 20px;
   }
+
+	footer .wrapper {
+		max-width: 100%;
+	}
+
+	footer .footer-links ul.mobile-footer-links {
+    /*display: grid !important;*/
+    display: inline-grid !important;
+    width: 100%;
+	}
+
+  .footer-subtitle .footer-info b {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  footer .footer-content, footer .footer-links-container .footer-info {
+    font-size: 15px !important;
+    letter-spacing: 0.5px;
+  }
+
+	footer .footer-links ul li {
+    border-bottom: 1px solid #e5e5e5;
+		line-height: 40px;
+		border-right: none !important;
+	}
+
+	footer .desktop-disclaimer {
+    padding: 10px;
+	}
+
+  .logo-mobile.tecfidera {
+      width: 330px;
+  }
+
+  .logo-mobile.biogen {
+    margin-top: -25px;
+  }
+
+  .footer-logo img.logo-desktop {
+    display: none;
+  }
+
 }
 
 
@@ -499,6 +506,16 @@ footer .footer-links-container p a {
     width: 100%;
 	}
 
+  .footer-subtitle .footer-info b {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  footer .footer-content, footer .footer-links-container .footer-info {
+    font-size: 15px !important;
+    letter-spacing: 0.5px;
+  }
+
 	footer .footer-links ul li {
     border-bottom: 1px solid #e5e5e5;
 		line-height: 40px;
@@ -509,12 +526,12 @@ footer .footer-links-container p a {
     padding: 10px;
 	}
 
-  img.logo-mobile.tecfidera {
-      width: 240px;
+  .logo-mobile.tecfidera {
+      width: 330px;
   }
 
-  img.logo-mobile.biogen {
-      width: 150px;
+  .logo-mobile.biogen {
+    margin-top: -25px;
   }
 
   .footer-logo img.logo-desktop {
@@ -549,12 +566,26 @@ footer .footer-links-container p a {
     width: 100%;
 	}
 
+  .footer-subtitle .footer-info b {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  footer .footer-content, footer .footer-links-container .footer-info {
+    font-size: 15px !important;
+    letter-spacing: 0.5px;
+  }
+
 	footer .footer-links ul li {
     border-bottom: 1px solid #e5e5e5;
     line-height: 40px;
     border-right: none;
     border-right: 0 solid white !important;
 	}
+
+  .footer-subtitle {
+    margin-bottom: 8px;
+  }
 
 	footer .desktop-disclaimer {
     padding: 10px;
@@ -584,5 +615,15 @@ footer .footer-links-container p a {
 
   img.logo-mobile.biogen {
     width: 110px;
+  }
+
+  .footer-subtitle .footer-info b {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+
+  footer .footer-content, footer .footer-links-container .footer-info {
+    font-size: 12px !important;
+    letter-spacing: 0.5px;
   }
 }

@@ -10,12 +10,16 @@
   text-align: center;
 }
 
-.content #tecFideraInfoModal .modal-body {
+ #tecFideraInfoModal .modal-body {
     height: 385px;
+    padding: 0px 50px 50px;
+    font-size: 17px;
 }
 
-.content #aboutBiogenModal .modal-body {
+#aboutBiogenModal .modal-body {
     height: 531px;
+    font-size: 17px;
+    text-align: center;
 }
 
 .content .modal-content, .html .modal-content{
@@ -23,8 +27,27 @@
 }
 
 .content .modal-body {
-    text-align: justify;
+  text-align: justify;
 }
+
+.modal-open footer .footer-links ul.mobile-footer-links {
+    opacity: 0;
+}
+
+#tecFideraInfoModal, #aboutBiogenModal {
+    background: rgba(43, 42, 40, 0.65);
+}
+
+.modal-content a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.modal-references{
+  font-size: 13px;
+  margin-top: 10px;
+}
+
 
 .generic-page .html .modal-dialog {
   width: 100%;
@@ -44,18 +67,22 @@
 }
 
 .template_home .html .modal-footer, .html .modal-header, .generic-page .html .modal-footer {
-    text-align: center;
-    border-top: unset;
-    font-size: 12px;
-    font-style: initial;
+  font-size: 16px;
+  letter-spacing: -1.5px;
+}
+
+.template_home .html .modal-footer,.template_home .html .modal-header{
+  font-size: 17px;
+  letter-spacing: -1px;
 }
 
 .template_home .html .modal-header{
     padding: 50px 10px 20px;
 }
 
-.template_home .html .modal-body, .template_home .html .modal-footer {
+.template_home .html .modal-body{
     padding: 15px 50px 20px;
+    font-size: 19px;
 }
 
 .template_home .html .modal-header .close {
@@ -71,18 +98,50 @@
     display: inherit;
 }
 
+.copyright.text {
+    text-align: center;
+}
+
 img.biogen-arrow {
-    margin-left: -51px;
     margin-top: -156px;
+}
+
+#tecFideraInfoModal .modal-header p{
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: -10px;
+}
+
+.modal-open footer .desktop-footer-links li.modal-activelink a {
+    color: #38681e !important;
+}
+
+.modal-content-subtitle {
+    font-style: italic;
+}
+
+.modal-body b {
+    font-weight: bolder;
+    color: #000000;
+}
+
+.template_home .html .modal-footer {
+    margin-left: 40px;
+    font-size: 15px;
+    letter-spacing: -1px;
+    margin-right: 40px
 }
 
 @media only screen and (min-width: 1884px){
   .template_home .html .modal-dialog {
-    width: 60%;
+    width: 80%;
   }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 414px) {
+  .modal {
+    top: 70px;
+  }
   .template_home .html .modal-footer, .html .modal-header {
       font-size: 12px;
   }
@@ -99,6 +158,13 @@ img.biogen-arrow {
   img.biogen-arrow {
       margin-left: -21px;
       margin-top: -140px;
+  }
+  #tecFideraInfoModal .modal-body {
+      height: 100%;
+  }
+
+  #aboutBiogenModal .modal-body {
+      height: 100%;
   }
 }
 
@@ -119,11 +185,25 @@ img.biogen-arrow {
     margin-left: -21px;
     margin-top: -140px;
   }
+   #tecFideraInfoModal .modal-body {
+      height: 100%;
+  }
 
+   #aboutBiogenModal .modal-body {
+      height: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) and (orientation : portrait){
   .copyright.logo {
     float: inherit;
+  }
+
+   #tecFideraInfoModal .modal-body {
+      height: 100%;
+  }
+
+  #aboutBiogenModal .modal-body {
+      height: 100%;
   }
 }
