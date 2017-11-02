@@ -26,7 +26,7 @@ body{
 }
 
 .title h1 {
-    font-size: 40px;
+    font-size: 37px;
     font-weight: 600;
     font-family: "DinPro Bold";
 }
@@ -37,7 +37,7 @@ body{
 }
 
 .logo-options .col1 .first {
-    margin: 15px 0 15px -271px;
+    margin: 30px 0 15px -271px;
 }
 
 .page-header-generic {
@@ -67,13 +67,13 @@ body{
   margin-left: -36px;
 }
 
-.content-subtitle {
-    font-size: 16px;
+/*.content-subtitle {
+    font-size: 1.2;
 }
 
 .content-description {
-    font-size: 14px;
-}
+    font-size: 1.2vw;
+}*/
 
 .column-control-column .text, .nav-image .title {
   margin-top: 20px;
@@ -94,16 +94,16 @@ body{
     color: #f0a055;
     text-transform: uppercase;
     font-size: 14px;
-    margin-top: 20px;
-    width: 247px;
-    height: 40px;
-    border: none;
+    margin-top: 0;
+    width: 350px;
+    height: 63px;
+    /*border: none;*/
     -webkit-box-shadow: none;
-    /*box-shadow: 0 0 1em grey;
+    box-shadow: 0 0 1em grey;
     -webkit-box-shadow: 0 0 1em grey;
     -moz-box-shadow: 0 0 1em gray;
     box-shadow: none;
-    -webkit-box-shadow: none;*/
+    -webkit-box-shadow: none;
 
 }
 
@@ -131,8 +131,15 @@ body{
 }
 
 .media .media-body {
-  text-align: justify;
-  display: inline;
+    /* text-align: justify;
+    display: inline; */
+    font-size: 19px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.columncontrol .teasertile {
+    margin-top: -20px;
 }
 
 .generic-page .columncontrol {
@@ -186,13 +193,13 @@ footer .disclaimer-text, .logo-options .col1 .first img {
     margin-top: 10px;
 }
 
-p.content-subtitle {
+/*p.content-subtitle {
     font-size: 15px;
 }
 
 p.content-description {
   font-size: 17px;
-}
+}*/
 
 @media only screen and (min-width: 2050px) {
   .nav-image .calltoaction .tysabri-promo-container{
@@ -217,7 +224,7 @@ p.content-description {
 
 @media only screen and (max-width: 2049px) and (min-width: 1949px) {
   .nav-image .calltoaction .tysabri-promo-container{
-    margin-right: 420px;
+    margin-right: 130px;
   }
 
   .fact-sheet .mobile-image {
@@ -242,7 +249,7 @@ p.content-description {
   }
 
   .nav-image .calltoaction .tysabri-promo-container{
-    margin-right: 322px;
+    margin-right: 130px;
   }
 
   .fact-sheet .mobile-image {
@@ -255,14 +262,9 @@ p.content-description {
     font-size: 1vw;
   }
 
-  p.content-description {
+  /*p.content-description {
     font-size: 1.3vw;
-  }
-
-  .title h1 {
-    font-size: 2vw;
-
-  }
+  }*/
 
   .columncontrol .teasertile {
       margin-bottom: 20px;
@@ -275,7 +277,16 @@ p.content-description {
   }
 
   .nav-image .adaptiveimage figure img {
-    margin-top: 20px;
+      margin-top: 20px;
+  }
+
+  .page_stay-well-on-treatment .nav-image .adaptiveimage figure img {
+    margin-top: 0;
+  }
+
+
+  .title h1 {
+    font-size: 37px;
   }
 
   .page_ready-to-start-planning .start-nav-image .adaptiveimage figure img{
@@ -284,6 +295,28 @@ p.content-description {
 
   .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
     margin-left: -36px;
+  }
+
+  .page_ready-to-start-planning .columncontrol .column-control-column .text{
+    font-size: 19px;
+  }
+
+  .page_plan-effectively-treat-ms .title h1, .page_stay-well-on-treatment .title h1, .page_convenience .title h1{
+    margin-top: -13px;
+  }
+
+  .end-nav-image .adaptiveimage figure img{
+    margin-top : 0;
+  }
+
+  .page_plan-effectively-treat-ms .columncontrol .column-control-column .text {
+    font-size: 19px;
+    line-height: 1.2;
+    margin-right: 10px;
+  }
+
+  .page_plan-effectively-treat-ms p.content-subtitle {
+    font-weight: bolder;
   }
 }
 
@@ -295,14 +328,6 @@ p.content-description {
 
   .num-ways {
     margin-bottom: 30px;
-  }
-
-  .content-subtitle {
-      font-size: 14px;
-  }
-
-  .content-description {
-    font-size: 13px;
   }
 
   .columncontrol .column-control-column .text{
@@ -320,13 +345,17 @@ p.content-description {
   }
 
   .logo-options .col1 .first {
-    margin: 15px 0 15px -218px;
+    margin: 30px 0 15px -218px;
   }
 
   .nav-image .adaptiveimage figure img {
     margin-left: -36px;
     margin-top: 50px;
     margin-bottom: 10px;
+  }
+
+  .page_stay-well-on-treatment .nav-image .adaptiveimage figure img {
+    margin-top: 0;
   }
 
   .nav-image .calltoaction .tysabri-promo-container {
@@ -349,6 +378,28 @@ p.content-description {
 
   .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
     margin-left: -36px;
+  }
+
+  .page_ready-to-start-planning .columncontrol .column-control-column .text{
+    font-size: 19px;
+  }
+
+  .page_plan-effectively-treat-ms .title h1, .page_stay-well-on-treatment .title h1, .page_convenience .title h1{
+    margin-top: -13px;
+  }
+
+  .end-nav-image .adaptiveimage figure img{
+    margin-top : 15px;
+  }
+
+  .page_plan-effectively-treat-ms .columncontrol .column-control-column .text,.page_plan-effectively-treat-ms p.content-subtitle {
+    font-size: 19px;
+    line-height: 1.2;
+    margin-right: 10px;
+  }
+
+  .page_plan-effectively-treat-ms p.content-subtitle {
+    font-weight: bolder;
   }
 }
 
@@ -374,7 +425,13 @@ p.content-description {
   }
 
   .nav-image .calltoaction .tysabri-promo-container {
-    margin-right: 140px;
+    margin-right: 166px;
+  }
+
+  .nav-image .calltoaction .tysabri-cta{
+    margin-top: 20px;
+    width: 315px;
+    height: 40px;
   }
 
   .nav-image .adaptiveimage figure img {
@@ -384,14 +441,36 @@ p.content-description {
     margin-bottom: 10px;
   }
 
+  .page_stay-well-on-treatment .nav-image .adaptiveimage figure img {
+    margin-top: 3px;
+  }
+
+
   .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
       float: left;
       margin-left: -70px;
       margin-bottom: 10px;
   }
 
+  .page_plan-effectively-treat-ms .title h1, .page_stay-well-on-treatment .title h1, .page_convenience .title h1{
+    margin-top: -13px;
+  }
+
+  .end-nav-image .adaptiveimage figure img{
+    margin-top : 0;
+  }
+
+
+  .page_ready-to-start-planning .columncontrol .column-control-column .text{
+    font-size: 19px;
+  }
+
   .page_ready-to-start-planning .start-nav-image .adaptiveimage figure img{
-        margin-top: 122px;
+    margin-top: 125px;
+  }
+
+  .page_learn-how .fact-sheet .desktop-image, .page_plan-effectively-treat-ms .fact-sheet .desktop-image {
+    margin-top: -200px;
   }
 
   .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
@@ -411,6 +490,11 @@ p.content-description {
     margin-top: -170px;
     z-index: 1;
   }
+  .page_plan-effectively-treat-ms .columncontrol .column-control-column .text,.page_plan-effectively-treat-ms p.content-subtitle {
+    font-size: 19px;
+    line-height: 1.2;
+    margin-right: 10px;
+  }
 
 }
 
@@ -429,10 +513,42 @@ p.content-description {
     margin-top: 60px;
   }
 
+  .page_plan-effectively-treat-ms .columncontrol .column-control-column .text,.page_plan-effectively-treat-ms p.content-subtitle {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .nav-image .calltoaction .tysabri-cta {
+    margin-top: 30px;
+    height: 30px;
+    width: 220px;
+  }
+
+  .nav-image .calltoaction .tysabri-promo-container {
+    margin-right: 127px;
+  }
+
+  .page_plan-effectively-treat-ms .title h1, .page_stay-well-on-treatment .title h1{
+    margin-top: -13px;
+  }
+
 }
 
 
 @media only screen and (max-width: 1160px) and (min-width: 1010px) and (orientation: landscape) {
+  .page_plan-effectively-treat-ms .columncontrol .column-control-column .text,.page_plan-effectively-treat-ms p.content-subtitle {
+    font-size: 19px;
+    line-height: 1.2;
+    margin-right: 10px;
+  }
+
+  .page_plan-effectively-treat-ms .title h1, .page_stay-well-on-treatment .title h1{
+    margin-top: -13px;
+  }
+
+  .page_learn-how .fact-sheet .desktop-image, .page_plan-effectively-treat-ms .fact-sheet .desktop-image {
+    margin-top: -200px;
+  }
 
   .fact-sheet-image .adaptiveimage {
     margin-left: auto;
@@ -465,10 +581,11 @@ p.content-description {
   .nav-image .calltoaction .tysabri-cta {
     margin-top: 30px;
     height: 30px;
+    width: 220px;
   }
 
   .nav-image .calltoaction .tysabri-promo-container {
-    margin-right: 150px;
+    margin-right: 120px;
   }
 
   .fact-sheet .desktop-image {
@@ -514,6 +631,9 @@ p.content-description {
     margin-left: -36px;
   }
 
+  .page_ready-to-start-planning .column-control-column .title {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 1009px) and (min-width: 769px){
@@ -548,6 +668,7 @@ p.content-description {
   .nav-image .calltoaction .tysabri-cta {
     margin-top: 30px;
     height: 30px;
+    width: 220px;
   }
 
   .nav-image .calltoaction .tysabri-promo-container {
@@ -583,6 +704,10 @@ p.content-description {
     margin-bottom: 10px;
   }
 
+  .fact-sheet-image .section img.talent {
+    max-width: none;
+  }
+
   .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img  {
       float: left;
       margin-left: -70px;
@@ -590,11 +715,24 @@ p.content-description {
   }
 
   .page_ready-to-start-planning .start-nav-image .adaptiveimage figure img{
-        margin-top: 54px;
+    margin-top: 138px;
   }
 
   .end-nav-image .adaptiveimage figure img, .stay-well .adaptiveimage figure img{
     margin-left: -36px;
+  }
+
+  .page_learn-how .fact-sheet .desktop-image, .page_plan-effectively-treat-ms .fact-sheet .desktop-image {
+    margin-top: -200px;
+  }
+
+  .page_plan-effectively-treat-ms .columncontrol .column-control-column .text,.page_plan-effectively-treat-ms p.content-subtitle {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .page_plan-effectively-treat-ms .title h1, .page_stay-well-on-treatment .title h1{
+    margin-top: -13px;
   }
 
 }
@@ -616,7 +754,7 @@ p.content-description {
   }
 
   .teasertile .media .media-body p {
-    font-size: 14px;
+    font-size: 19px;
   }
 
   .hidden-xs {
@@ -642,12 +780,16 @@ p.content-description {
       margin-right: 20px;
   }
 
-  .content-title {
-      font-size: 13px;
+  .logo-options .col1 .first {
+    margin-right: auto;
+    margin-left: 70px;
+    display: block;
+    width: 100%;
   }
 
-  .logo-options .col1 .first {
-      margin: 15px 0 15px 15px;
+  .logo-options .col1 .first img {
+      width: 90%;
+      text-align: center;
   }
 
   .columncontrol .column-control-column .text {
@@ -655,12 +797,12 @@ p.content-description {
     font-size: 2.5vw;
   }
 
-  .columncontrol .column-control-column {
-    font-size: 2vw;
+  .page_plan-effectively-treat-ms .columncontrol .column-control-column .text {
+    margin-bottom: 35px;
   }
 
-  .content-description {
-    font-size: 13px;
+  .columncontrol .column-control-column {
+    font-size: 2vw;
   }
 
   .nav-image .calltoaction .tysabri-promo-container {
@@ -681,13 +823,22 @@ p.content-description {
   .columncontrol .teasertile {
     margin-bottom: 10px;
   }
+
+  .page_plan-effectively-treat-ms .columncontrol .column-control-column .text,.page_plan-effectively-treat-ms p.content-subtitle {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .page_plan-effectively-treat-ms .title h1, .page_stay-well-on-treatment .title h1{
+    margin-top: -13px;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 414px) and (orientation: portrait){
   .nav-image .calltoaction .tysabri-cta {
-      margin-top: 10px;
-      height: 50px;
-      width: 130px;
+    margin-top: 0;
+    height: 57px;
+    width: 130px;
   }
   .nav-image .adaptiveimage figure img {
     margin-left: 0;
@@ -696,6 +847,18 @@ p.content-description {
   .nav-image .adaptiveimage figure img {
     margin-top: 40px;
   }
+
+  .second-column {
+    margin-top: -30px;
+  }
+
+  .logo-options .col1 .first {
+      margin-right: auto;
+      margin-left: 33px;
+      display: block;
+      width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 767px) and (min-width: 414px) and (orientation: landscape){
@@ -719,12 +882,15 @@ p.content-description {
   }
 
   .logo-options .col1 .first {
-    margin: 15px 0 15px 40px;
+    margin-right: auto;
+    margin-left: 70px;
+    display: block;
+    width: 100%;
   }
 
-  .logo-options .first img {
-      max-width: none;
-      width: 330px;
+  .logo-options .col1 .first img {
+      width: 70%;
+      text-align: center;
   }
 
   .fact-sheet .mobile-image {
@@ -780,14 +946,6 @@ p.content-description {
     margin-bottom: 10px;
   }
 
-  .content-title {
-      font-size: 13px;
-  }
-
-  .content-description {
-    font-size: 13px;
-  }
-
   .nav-image .calltoaction .tysabri-promo-container {
       margin-right: 50px;
   }
@@ -806,6 +964,19 @@ p.content-description {
     margin-bottom: 10px;
   }
 
+  .second-column {
+    margin-top: -30px;
+  }
+
+  .page_plan-effectively-treat-ms .columncontrol .column-control-column .text,.page_plan-effectively-treat-ms p.content-subtitle {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .page_plan-effectively-treat-ms .title h1, .page_stay-well-on-treatment .title h1{
+    margin-top: -13px;
+  }
+
 }
 
 @media only screen and (max-width: 375px){
@@ -816,11 +987,19 @@ p.content-description {
   .logo-options .first img {
     width: 257px;
   }
+
+  .second-column {
+    margin-top: -30px;
+  }
 }
 
 @media only screen and (max-width: 320px){
   .logo-options .col1 .first {
       margin: 15px 0 15px -67px;
+  }
+
+  .second-column {
+    margin-top: -30px;
   }
 
 }
