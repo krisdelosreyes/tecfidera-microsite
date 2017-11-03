@@ -527,11 +527,12 @@ footer .footer-links-container p a {
 	}
 
   .logo-mobile.tecfidera {
-      width: 330px;
+      width: 313px;
   }
 
   .logo-mobile.biogen {
-    margin-top: -25px;
+      margin-top: -25px;
+      width: 200px;
   }
 
   .footer-logo img.logo-desktop {
@@ -540,7 +541,17 @@ footer .footer-links-container p a {
 }
 
 @media only screen and (max-width: 479px) {
+  footer .footer-links ul.mobile-footer-links a {
+    font-size: 18px;
+  }
 
+  img.logo-mobile.tecfidera {
+    width: 240px;
+  }
+
+  img.logo-mobile.biogen {
+    width: 150px;
+  }
 
   .bx-pager a {
     width: 20px;
@@ -609,12 +620,16 @@ footer .footer-links-container p a {
 }
 
 @media only screen and (max-width: 375px) {
+  footer .footer-links ul.mobile-footer-links a {
+    font-size: 18px;
+  }
+
   img.logo-mobile.tecfidera {
-      width: 170px;
+    width: 240px;
   }
 
   img.logo-mobile.biogen {
-    width: 110px;
+    width: 150px;
   }
 
   .footer-subtitle .footer-info b {
@@ -626,4 +641,5 @@ footer .footer-links-container p a {
     font-size: 12px !important;
     letter-spacing: 0.5px;
   }
+
 }

@@ -10,6 +10,14 @@
   text-align: center;
 }
 
+.modal-open .modal {
+    overflow-y: overlay;
+}
+
+.modal-body, .modal-header, .modal-footer {
+  color: #0e1111;
+}
+
  #tecFideraInfoModal .modal-body {
     height: 385px;
     padding: 0px 50px 50px;
@@ -69,11 +77,13 @@
 .template_home .html .modal-footer, .html .modal-header, .generic-page .html .modal-footer {
   font-size: 16px;
   letter-spacing: -1.5px;
+  margin-bottom: 10px;
 }
 
 .template_home .html .modal-footer,.template_home .html .modal-header{
   font-size: 17px;
   letter-spacing: -1px;
+  margin-bottom: 10px;
 }
 
 .template_home .html .modal-header{
@@ -132,15 +142,65 @@ img.biogen-arrow {
     margin-right: 40px
 }
 
+.template_home .html .modal-header p{
+  line-height: 0.8;
+}
+
+@media only screen and (min-width: 2050px) {
+  .template_home .html .modal-dialog ,.generic-page .html .modal-dialog{
+    width: 80%;
+  }
+
+  .html .modal-header{
+    font-size: 23px;
+    letter-spacing: -1.5px;
+    margin-bottom: 10px;
+  }
+
+  #tecFideraInfoModal .modal-body {
+    height: auto;
+    font-size: 23px;
+  }
+
+  .modal-references {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  #tecFideraInfoModal .modal-header p {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 0.8;
+  }
+
+  #aboutBiogenModal .modal-body {
+      font-size: 18px;
+      text-align: center;
+  }
+
+  .template_home .html .modal-body {
+    font-size: 22px;
+  }
+
+  .template_home .html .modal-header {
+    font-size: 20px;
+  }
+
+  .template_home .html .modal-footer {
+      font-size: 20px;
+  }
+
+}
+
 @media only screen and (min-width: 1884px){
-  .template_home .html .modal-dialog {
+  .template_home .html .modal-dialog ,.generic-page .html .modal-dialog{
     width: 80%;
   }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 414px) {
   .modal {
-    top: 70px;
+    top: 40px;
   }
   .template_home .html .modal-footer, .html .modal-header {
       font-size: 12px;
@@ -169,6 +229,10 @@ img.biogen-arrow {
 }
 
 @media only screen and (max-width: 413px){
+  .modal {
+    top: 70px;
+  }
+
   .template_home .html .modal-footer, .html .modal-header {
       font-size: 12px;
   }
@@ -185,8 +249,12 @@ img.biogen-arrow {
     margin-left: -21px;
     margin-top: -140px;
   }
-   #tecFideraInfoModal .modal-body {
-      height: 100%;
+
+  #tecFideraInfoModal .modal-body {
+      height: 385px;
+      padding: 0px 25px 25px;
+      font-size: 17px;
+      text-align: left;
   }
 
    #aboutBiogenModal .modal-body {
@@ -195,8 +263,12 @@ img.biogen-arrow {
 }
 
 @media only screen and (max-width: 768px) and (orientation : portrait){
+  .modal {
+    top: 70px;
+  }
+
   .copyright.logo {
-    float: inherit;
+      float: left;
   }
 
    #tecFideraInfoModal .modal-body {
@@ -206,4 +278,132 @@ img.biogen-arrow {
   #aboutBiogenModal .modal-body {
       height: 100%;
   }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #tecFideraInfoModal .modal-header p {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.1;
+    margin-bottom: 0;
+  }
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  .modal {
+    top: 70px;
+  }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #tecFideraInfoModal .modal-header p {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.1;
+    margin-bottom: 0;
+  }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  .modal {
+    top: 0;
+  }
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+  #tecFideraInfoModal .modal-header p {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.1;
+    margin-bottom: 0;
+  }
+
+  .modal {
+    top: 0;
+  }
+
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  .modal {
+    top: 0;
+  }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .modal {
+    top: 0;
+  }
+
+  #tecFideraInfoModal .modal-body {
+    height: 100%;
+  }
+
 }
