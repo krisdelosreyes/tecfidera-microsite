@@ -1,3 +1,4 @@
+
 .template_home.modal-open .fade.in, .template_home .fade.in{
     background-color: rgba(0, 0, 0, 0.5) ;
 }
@@ -260,6 +261,11 @@ img.biogen-arrow {
    #aboutBiogenModal .modal-body {
       height: 100%;
   }
+
+  .spacer{
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 768px) and (orientation : portrait){
@@ -294,6 +300,11 @@ img.biogen-arrow {
     line-height: 1.1;
     margin-bottom: 0;
   }
+
+  .spacer{
+    display: none;
+  }
+
 }
 
 /* Portrait */
@@ -331,6 +342,11 @@ img.biogen-arrow {
     line-height: 1.1;
     margin-bottom: 0;
   }
+
+  .spacer{
+    display: none;
+  }
+
 
 }
 
@@ -373,6 +389,10 @@ img.biogen-arrow {
 
   .modal {
     top: 0;
+  }
+
+  .spacer{
+    display: none;
   }
 
 }

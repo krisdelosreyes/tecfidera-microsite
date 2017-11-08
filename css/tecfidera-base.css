@@ -205,12 +205,12 @@ footer .back-to-top .icon-span {
 }
 
 footer .logo-desktop.tecfidera {
-    width: 240px
+    width: auto;
 }
 
 footer .logo-desktop.biogen {
     margin-top: -14px;
-    width: 145px;
+    width: auto;
 }
 
 footer .footer-links-container{
@@ -373,12 +373,12 @@ footer .footer-links-container p a {
   }
 
   footer .logo-desktop.tecfidera {
-    width: 220px;
+    width: auto;
   }
 
   footer .logo-desktop.biogen {
     margin-top: -14px;
-    width: 135px;
+    width: auto;
   }
 
   footer .wrapper {
