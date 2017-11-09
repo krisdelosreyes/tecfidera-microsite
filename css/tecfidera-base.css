@@ -183,12 +183,12 @@ footer .footer-links-container .logo-biogen, .template_home .content {
 	display: none;
 }
 
-footer .footer-links ul.mobile-footer-links a, footer .footer-links ul.desktop-footer-links a {
+footer .footer-links ul.mobile-footer-links a, footer .footer-links ul.desktop-footer-links a, .footer-categories .footerelement .footer-category-item a {
     color: #cfdae2 !important;
     font-family: "DinPro" !important;
 }
 
-footer .footer-links ul.mobile-footer-links a {
+footer .footer-links ul.mobile-footer-links a, .footer-categories .footerelement .footer-category-item a {
     font-size: 25px;
 }
 
@@ -240,6 +240,55 @@ footer .footer-content {
 footer .footer-links-container p a {
     color: #f5f1f0 !important;
 }
+
+footer .footer-links ul.mobile-footer-links {
+    display: none !important;
+}
+
+.footerelement {
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 40px;
+    border-right: none;
+}
+
+.footer-categories{
+  display: none;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -20px;
+  margin-bottom: 35px;
+}
+
+
+
+.footer-category-item {
+    margin: .4em 0 0;
+}
+
+sup {
+    top: -6px;
+    font-size: 9px;
+    margin-left: -4px;
+}
+
+sup.asterisk {
+    font-size: 17px;
+    margin-left: -2px;
+}
+
+sup.asterisk.title{
+  top: -18px;
+}
+
+sup.registered {
+    margin-left: 0;
+}
+
+  .footer-subtitle{
+    text-align: center;
+  }
+
+
 
 
 /*
@@ -439,11 +488,11 @@ footer .footer-links-container p a {
 		max-width: 100%;
 	}
 
-	footer .footer-links ul.mobile-footer-links {
-    /*display: grid !important;*/
-    display: inline-grid !important;
+	/*footer .footer-links ul.mobile-footer-links {
+
+    display: contents !important;
     width: 100%;
-	}
+	}*/
 
   .footer-subtitle .footer-info b {
     font-size: 16px;
@@ -490,6 +539,10 @@ footer .footer-links-container p a {
     border-radius: 15px;
   }
 
+  .footer-categories{
+    display: block;
+  }
+
   .bx-controls {
       text-align: right;
       right: 156px;
@@ -500,11 +553,11 @@ footer .footer-links-container p a {
 		max-width: 100%;
 	}
 
-	footer .footer-links ul.mobile-footer-links {
-    /*display: grid !important;*/
+	/*footer .footer-links ul.mobile-footer-links {
+
     display: inline-grid !important;
     width: 100%;
-	}
+	}*/
 
   .footer-subtitle .footer-info b {
     font-size: 16px;
@@ -522,9 +575,12 @@ footer .footer-links-container p a {
 		border-right: none !important;
 	}
 
+
 	footer .desktop-disclaimer {
     padding: 10px;
 	}
+
+
 
   .logo-mobile.tecfidera {
       width: 313px;
@@ -541,8 +597,12 @@ footer .footer-links-container p a {
 }
 
 @media only screen and (max-width: 479px) {
-  footer .footer-links ul.mobile-footer-links a {
+  footer .footer-links ul.mobile-footer-links a, .footer-categories .footerelement .footer-category-item a {
     font-size: 18px;
+  }
+
+  .footer-categories{
+    display: block;
   }
 
   img.logo-mobile.tecfidera {
@@ -571,11 +631,11 @@ footer .footer-links-container p a {
 		max-width: 100%;
 	}
 
-	footer .footer-links ul.mobile-footer-links {
-    /*display: grid !important;*/
+  /*footer .footer-links ul.mobile-footer-links {
+
     display: inline-grid !important;
     width: 100%;
-	}
+	}*/
 
   .footer-subtitle .footer-info b {
     font-size: 16px;
@@ -596,6 +656,7 @@ footer .footer-links-container p a {
 
   .footer-subtitle {
     margin-bottom: 8px;
+    text-align: center;
   }
 
 	footer .desktop-disclaimer {
@@ -620,8 +681,12 @@ footer .footer-links-container p a {
 }
 
 @media only screen and (max-width: 375px) {
-  footer .footer-links ul.mobile-footer-links a {
+  footer .footer-links ul.mobile-footer-links a, .footer-categories .footerelement .footer-category-item a {
     font-size: 18px;
+  }
+
+  .footer-categories{
+    display: block;
   }
 
   img.logo-mobile.tecfidera {

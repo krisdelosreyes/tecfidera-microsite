@@ -1573,3 +1573,39 @@ p.content-description {
   }
 
 }
+
+
+/* ----------- Galaxy S3 ----------- */
+
+
+/* Portrait */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .nav-image .calltoaction .tysabri-promo-container {
+        padding-left: 0;
+        padding-right: 10px;
+        height: -14px;
+        width: 20%;
+        margin-right: 15px;
+        margin-top: -73px;
+    }
+
+}
+
+/* Portrait */
+@media screen
+  and (device-width: 412px)
+  and (device-height: 732px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .nav-image .calltoaction .tysabri-promo-container {
+        margin-right: 12px;
+        margin-top: -62px;
+    }
+
+}

@@ -91,6 +91,14 @@
     padding: 50px 10px 20px;
 }
 
+.content .modal-header {
+    padding: 50px 10px 20px;
+}
+
+.content .tecfidera-modal.close {
+    margin-top: -35px;
+}
+
 .template_home .html .modal-body{
     padding: 15px 50px 20px;
     font-size: 19px;
@@ -143,8 +151,9 @@ img.biogen-arrow {
     margin-right: 40px
 }
 
-.template_home .html .modal-header p{
-  line-height: 0.8;
+#tecFideraInfoModal .modal-header p {
+    line-height: 1;
+    margin: 0;
 }
 
 @media only screen and (min-width: 2050px) {
