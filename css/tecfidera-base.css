@@ -41,9 +41,13 @@ header .logo-options, footer, header .utility-nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#969696', endColorstr='#a8a8a8', GradientType=1 );
 }
 
+header .fixed {
+  border-bottom: 0;
+}
+
 .logo-options .wrapper {
   margin-bottom: 0;
-  height: 120px;
+  height: 120px /*header-reduced*/;
 }
 
 .logo-options .col1 .first a {
@@ -469,7 +473,27 @@ sup.registered {
   }
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
+  footer .footer-links ul.desktop-footer-links a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: landscape) {
+  footer .footer-links ul.desktop-footer-links a {
+    font-size: 15px;
+  }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 621px) {
+  .main.generic-page.full-width {
+      margin-top: -20px; /*header-reduced*/
+  }
+
+  .logo-options .wrapper {
+    height: 100px /*header-reduced*/;
+  }
+
   .bx-pager a {
     width: 20px;
     height: 20px;
@@ -531,6 +555,14 @@ sup.registered {
 
 
 @media only screen and (max-width: 620px) and (min-width: 414px) {
+  .main.generic-page.full-width {
+      margin-top: -20px; /*header-reduced*/
+  }
+
+  .logo-options .wrapper {
+    height: 100px /*header-reduced*/;
+  }
+
   .bx-pager a {
     width: 20px;
     height: 20px;
@@ -580,8 +612,6 @@ sup.registered {
     padding: 10px;
 	}
 
-
-
   .logo-mobile.tecfidera {
       width: 313px;
   }
@@ -597,6 +627,14 @@ sup.registered {
 }
 
 @media only screen and (max-width: 479px) {
+  .main.generic-page.full-width {
+      margin-top: -20px; /*header-reduced*/
+  }
+
+  .logo-options .wrapper {
+    height: 100px /*header-reduced*/;
+  }
+
   footer .footer-links ul.mobile-footer-links a, .footer-categories .footerelement .footer-category-item a {
     font-size: 18px;
   }
@@ -681,6 +719,14 @@ sup.registered {
 }
 
 @media only screen and (max-width: 375px) {
+  .logo-options .wrapper {
+    height: 100px /*header-reduced*/;
+  }
+
+  .main.generic-page.full-width {
+      margin-top: -20px; /*header-reduced*/
+  }
+
   footer .footer-links ul.mobile-footer-links a, .footer-categories .footerelement .footer-category-item a {
     font-size: 18px;
   }
@@ -707,4 +753,47 @@ sup.registered {
     letter-spacing: 0.5px;
   }
 
+}
+
+
+/* Portrait and Landscape */
+@media only screen
+  and (device-width: 414px)
+  and (device-height: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .footer-categories{
+      display: block;
+    }
+
+    header .fixed {
+      position: absolute;
+    }
+}
+
+/* Portrait */
+@media only screen
+  and (device-width: 375px)
+  and (device-height: 667px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .footer-categories{
+      display: block;
+    }
+
+    header .fixed {
+      position: absolute;
+    }
+}
+
+/* Portrait and Landscape */
+@media only screen
+  and (device-width: 320px)
+  and (device-height: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  header .fixed {
+    position: absolute;
+  }
+
+  .footer-categories{
+    display: block;
+  }
 }

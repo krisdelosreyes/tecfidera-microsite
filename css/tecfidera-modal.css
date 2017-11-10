@@ -3,6 +3,10 @@
     background-color: rgba(0, 0, 0, 0.5) ;
 }
 
+.hide-over{
+  z-index: -1; /*for hiding overlapping links and trademark*/
+}
+
 .template_genericfullwidth .modal-backdrop {
   position: inherit;
 }
@@ -79,6 +83,7 @@
   font-size: 16px;
   letter-spacing: -1.5px;
   margin-bottom: 10px;
+  border-top: 0;
 }
 
 .template_home .html .modal-footer,.template_home .html .modal-header{
@@ -114,11 +119,12 @@
 }
 
 .copyright {
-    display: inherit;
+    display: table;
 }
 
 .copyright.text {
     text-align: center;
+    margin-top: 10px;
 }
 
 img.biogen-arrow {
@@ -156,9 +162,17 @@ img.biogen-arrow {
     margin: 0;
 }
 
+.template_home .html #homeModal .modal-dialog{
+  width: 70%;
+}
+
 @media only screen and (min-width: 2050px) {
   .template_home .html .modal-dialog ,.generic-page .html .modal-dialog{
     width: 80%;
+  }
+
+  .template_home .html #homeModal .modal-dialog{
+    width: 70%;
   }
 
   .html .modal-header{
@@ -206,6 +220,9 @@ img.biogen-arrow {
   .template_home .html .modal-dialog ,.generic-page .html .modal-dialog{
     width: 80%;
   }
+  .template_home .html #homeModal .modal-dialog{
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 414px) {
@@ -236,6 +253,8 @@ img.biogen-arrow {
   #aboutBiogenModal .modal-body {
       height: 100%;
   }
+
+
 }
 
 @media only screen and (max-width: 413px){
@@ -278,6 +297,11 @@ img.biogen-arrow {
 }
 
 @media only screen and (max-width: 768px) and (orientation : portrait){
+
+  .template_home .html #homeModal .modal-dialog{
+    width: 90%
+  }
+
   .modal {
     top: 70px;
   }
@@ -286,12 +310,36 @@ img.biogen-arrow {
       float: left;
   }
 
+  .copyright {
+      display: inline-block;
+  }
+
+  .copyright.logo{
+    width: 100%;
+    height: auto;
+  }
+
+  .copyright.logo img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .copyright.text {
+    font-size: 14px;
+  }
+
    #tecFideraInfoModal .modal-body {
       height: 100%;
   }
 
   #aboutBiogenModal .modal-body {
       height: 100%;
+  }
+
+  .template_home .html .modal-footer {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

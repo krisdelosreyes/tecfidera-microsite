@@ -12,6 +12,10 @@
   padding: 5px 3px 0px 3px;
 }
 
+.second-column {
+    margin-top: 0;
+}
+
 body{
   font-family: "DinPro Light" !important;
   color: #0e1111;
@@ -403,7 +407,7 @@ p.content-description {
   }
 
   .page_plan-effectively-treat-ms .title h1, .page_stay-well-on-treatment .title h1, .page_convenience .title h1{
-    margin-top: -13px;
+    margin-top: 0;
   }
 
   .end-nav-image .adaptiveimage figure img{
@@ -515,7 +519,7 @@ p.content-description {
 
   .columncontrol .column-control-column .text{
     margin-bottom: 10px;
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .columncontrol .teasertile {
@@ -1052,7 +1056,7 @@ p.content-description {
   }
 
   .page_plan-effectively-treat-ms .title h1, .page_stay-well-on-treatment .title h1{
-    margin-top: -13px;
+    margin-top: 0;
   }
 
   footer .footer-subtitle {
@@ -1124,15 +1128,255 @@ p.content-description {
   }
 }
 
+/*Mobile devices default*/
 
+@media only screen and (max-width: 731px) and (orientation: landscape){
+  header .fixed {
+    position: absolute;
+  }
+
+  .logo-options .col1 .first {
+      margin-right: auto;
+      margin-left: 120px;
+      margin-top: 20px;
+  }
+
+  .logo-options .col1 .first img {
+    width: 70%;
+    text-align: center;
+  }
+
+  .second-column {
+    margin-top: -30px;
+  }
+}
+
+
+@media only screen and (max-width: 412px) and (orientation : portrait) {
+
+      header .fixed {
+        position: absolute;
+      }
+
+      .logo-options .col1 .first {
+          margin: 0;
+          padding: 0;
+          margin-top: 10px /*header-reducer*/;
+      }
+
+        .logo-options .col1 .first img {
+            width: 450px;
+        }
+
+        .fact-sheet .desktop-image {
+          display: none;
+        }
+
+        .generic-page .columncontrol {
+          margin-left: 30px;
+          margin-right: 20px;
+        }
+
+        .nav-image .adaptiveimage figure img {
+          float: left;
+          margin-left: -1px;
+          margin-top: -55px;
+          margin-bottom: 10px;
+        }
+
+        .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
+          margin-top: 0;
+        }
+
+        .num-ways {
+            margin-bottom: 25px;
+        }
+
+        .second-column {
+          margin-top: -120px;
+        }
+
+        .page_plan-effectively-treat-ms .fact-sheet-image .section img.talent {
+          margin-left: 0;
+        }
+
+        .nav-image .calltoaction .tysabri-cta{
+          width: 90px;
+        }
+
+        .nav-image .calltoaction .tysabri-promo-container {
+            margin-right: 17px;
+        }
+
+        .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img{
+          margin-top: -50px;
+        }
+
+        .page_plan-effectively-treat-ms .columncontrol .column-control-column .text {
+          margin-bottom: 60px;
+        }
+
+    .fact-sheet-image .section img.talent {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+}
+
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+@media only screen
+  and (device-width: 375px)
+  and (device-height: 667px)
+  and (-webkit-min-device-pixel-ratio: 2){
+
+    .columncontrol .column-control-column .columncontrol {
+      margin: 0;
+      margin-top: 20px;
+      font-size: 17px;
+    }
+
+    .teasertile .media-heading {
+      margin-bottom: -15px;
+    }
+
+    .teasertile .media .media-body p {
+      font-size: 17px;
+    }
+
+    .columncontrol .column-control-column .text {
+      font-size: 17px;
+    }
+
+    .page_plan-effectively-treat-ms .columncontrol .column-control-column .text, .page_plan-effectively-treat-ms p.content-subtitle {
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    .footer-categories {
+      display: block;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (device-width: 375px)
+  and (device-height: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    header .fixed {
+      position: absolute;
+    }
+
+    .logo-options .col1 .first {
+        margin: 0;
+        padding: 0;
+        margin-top: 10px /*header-reducer*/;
+    }
+
+      .logo-options .col1 .first img {
+          width: 450px;
+      }
+
+      .fact-sheet .desktop-image {
+        display: none;
+      }
+
+      .generic-page .columncontrol {
+        margin-left: 30px;
+        margin-right: 20px;
+      }
+
+      .nav-image .adaptiveimage figure img {
+        float: left;
+        margin-left: -1px;
+        margin-top: -55px;
+        margin-bottom: 10px;
+      }
+
+      .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
+        margin-top: 0;
+      }
+
+      .num-ways {
+          margin-bottom: 25px;
+      }
+
+      .second-column {
+        margin-top: -120px;
+      }
+
+      .page_plan-effectively-treat-ms .fact-sheet-image .section img.talent {
+        margin-left: 0;
+      }
+
+      .nav-image .calltoaction .tysabri-cta{
+        width: 90px;
+      }
+
+      .nav-image .calltoaction .tysabri-promo-container {
+          margin-right: 17px;
+      }
+
+      .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img{
+        margin-top: -50px;
+      }
+
+      .page_plan-effectively-treat-ms .columncontrol .column-control-column .text {
+        margin-bottom: 60px;
+      }
+
+  .fact-sheet-image .section img.talent {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+}
+
+/* Landscape */
+@media only screen
+  and (device-width: 375px)
+  and (device-height: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  header .fixed {
+    position: absolute;
+  }
+
+  .logo-options .col1 .first {
+      margin-right: auto;
+      margin-left: 120px;
+      margin-top: 18px;
+  }
+
+  .logo-options .col1 .first img {
+    width: 70%;
+    text-align: center;
+  }
+
+  .second-column {
+    margin-top: -30px;
+  }
+
+}
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
 @media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
+  and (device-width: 414px)
+  and (device-height: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
+
+  header .fixed {
+  position: absolute;
+  }
 
   .fact-sheet-image .section img.talent{
       max-width: 100%
@@ -1140,13 +1384,6 @@ p.content-description {
 
   .start-nav-image .adaptiveimage figure img {
     margin-top: -56px;
-  }
-
-  .logo-options .col1 .first {
-    margin-top: 2.8vh;
-    display: block;
-    margin-left: 8px;
-    padding: 0;
   }
 
   .nav-image .calltoaction .tysabri-cta {
@@ -1244,7 +1481,7 @@ p.content-description {
   }
 
   .page_plan-effectively-treat-ms .title h1, .page_stay-well-on-treatment .title h1{
-    margin-top: -13px;
+    margin-top: 0;
   }
 
   .columncontrol .column-control-column .text {
@@ -1255,268 +1492,34 @@ p.content-description {
     margin-bottom: 12px;
   }
 
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-
-  .second-column {
-    margin-top: -30px;
-  }
-}
-
-
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-  header .fixed {
-    position: absolute;
-  }
-
-  .fact-sheet-image .section img.talent{
-      max-width: 100%
-  }
-
-  .logo-options .col1 .first {
-      margin: 0;
-      padding: 0;
-      margin-top: 30px;
-  }
-
-  .columncontrol .column-control-column .text {
-      font-size: 17px;
-  }
-
-  .second-column {
-    margin-top: -110px;
-  }
-
-  .num-ways {
-      margin-bottom: 40px;
-  }
-
-  .page_plan-effectively-treat-ms .columncontrol .column-control-column .text,.page_plan-effectively-treat-ms p.content-subtitle  {
-    font-size: 17px;
+  .footer-categories {
+    display: block;
   }
 
 }
+
 
 /* Portrait */
 @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (device-width: 414px)
+  and (device-height: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
-  .logo-options .col1 .first {
-      margin: 0;
-      padding: 0;
-      margin-top: 30px;
-  }
-
-  .logo-options .col1 .first img {
-      width: 450px;
-  }
-
-  .fact-sheet .desktop-image {
-    display: none;
-  }
-
-  .generic-page .columncontrol {
-    margin-left: 30px;
-    margin-right: 20px;
-  }
-
-  .nav-image .adaptiveimage figure img {
-    float: left;
-    margin-left: -1px;
-    margin-top: -55px;
-    margin-bottom: 10px;
-  }
-
-  /*.fact-sheet-image .section img.talent {
-      margin-left: 35px;
-  }*/
-
-  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
-    margin-top: 0;
-  }
-
-  .num-ways {
-    margin-bottom: 33px;
-  }
-
-  .page_plan-effectively-treat-ms .fact-sheet-image .section img.talent {
-    margin-left: 0;
-  }
-
-  .nav-image .calltoaction .tysabri-cta{
-    width: 90px;
-
-
-  .nav-image .calltoaction .tysabri-promo-container {
-    margin-right: 23px;
-  }
-
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-  .logo-options .col1 .first {
-      margin-right: auto;
-      margin-left: 70px;
-      margin-top: 18px;
-  }
-
-  .logo-options .col1 .first img {
-    width: 90%;
-    text-align: center;
-  }
-
-  .second-column {
-    margin-top: -30px;
-  }
-
-}
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
 
   header .fixed {
     position: absolute;
   }
 
-  .fact-sheet-image .section img.talent{
-      max-width: 100%
-  }
-
-  .nav-image .calltoaction .tysabri-promo-container {
-      margin-right: 81px;
-      margin-top: -62px;
-  }
-
-  .logo-options .first img {
-    width: 257px;
-  }
-
-  .columncontrol .column-control-column .text {
-      font-size: 17px;
-  }
-
-  .second-column {
-    margin-top: -110px;
-  }
-
-  .num-ways {
-    margin-bottom: 12px;
-  }
-
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
   .logo-options .col1 .first {
-      margin: 0;
-      padding: 0;
-      margin-top: 30px;
-  }
-
-  .logo-options .col1 .first img {
-      width: 450px;
-  }
-
-  .fact-sheet .desktop-image {
-    display: none;
-  }
-
-  .generic-page .columncontrol {
-    margin-left: 30px;
-    margin-right: 20px;
-  }
-
-  .nav-image .adaptiveimage figure img {
-    float: left;
-    margin-left: -1px;
-    margin-top: -55px;
-    margin-bottom: 10px;
-  }
-
-/*.fact-sheet-image .section img.talent {
-      margin-left: 60px;
-  }*/
-
-  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
-    margin-top: 0;
-  }
-
-  .num-ways {
-    margin-bottom: 33px;
-  }
-
-  .page_plan-effectively-treat-ms .fact-sheet-image .section img.talent {
-    margin-left: 0;
-  }
-
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-  .logo-options .col1 .first {
-      margin-right: auto;
-      margin-left: 70px;
-      margin-top: 18px;
-  }
-
-  .logo-options .col1 .first img {
-    width: 90%;
-    text-align: center;
-  }
-
-  .second-column {
-    margin-top: -30px;
-  }
-
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-
-  .logo-options .col1 .first {
+    margin: 0;
+    padding: 0;
     margin-left: 46px;
-    margin-top: 34px;
+    margin-top: 24px /*header-reducer*/;
+  }
+
+
+  .logo-options .col1 .first img {
+    width: 450px;
   }
 
   .fact-sheet-image .section img.talent{
@@ -1548,6 +1551,11 @@ p.content-description {
     margin-left: 0;
   }
 
+  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img{
+    margin-top: -50px;
+  }
+
+
   /*.fact-sheet-image .section img.talent {
     margin-left: 80px;
   }*/
@@ -1556,56 +1564,533 @@ p.content-description {
 
 /* Landscape */
 @media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
+  and (device-width: 414px)
+  and (device-height: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
 
+    header .fixed {
+      position: absolute;
+    }
+
+    .logo-options .col1 .first img {
+        width: 70%;
+        text-align: center;
+    }
+
   .logo-options .col1 .first {
-      margin-top: 2.8vh;
-      display: block;
-      margin-left: 65px;
-      padding: 0;
+    margin-top: 2.8vh;
+    display: block;
+    margin-left: 140px;
+    padding: 0;
   }
+
 
   .nav-image .calltoaction .tysabri-promo-container {
     margin-right: 0;
   }
 
+  .start-nav-image .adaptiveimage figure img {
+    margin-top: 0;
+  }
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (device-width: 320px)
+  and (device-height: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  header .fixed {
+    position: absolute;
+  }
+
+  .fact-sheet-image .section img.talent{
+      max-width: 100%
+  }
+
+  .columncontrol .column-control-column .text {
+      font-size: 17px;
+  }
+
+  .page_plan-effectively-treat-ms .columncontrol .column-control-column .text,.page_plan-effectively-treat-ms p.content-subtitle  {
+    font-size: 17px;
+  }
+
+}
+
+/* Portrait */
+@media only screen
+  and (device-width: 320px)
+  and (device-height: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  .logo-options .col1 .first {
+      margin: 0;
+      padding: 0;
+      margin-top: 20px /*header-reducer*/;
+  }
+
+  .logo-options .col1 .first img {
+      width: 450px;
+  }
+
+  .fact-sheet .desktop-image {
+    display: none;
+  }
+
+  .generic-page .columncontrol {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+
+  .nav-image .adaptiveimage figure img {
+    float: left;
+    margin-left: -1px;
+    margin-top: -55px;
+    margin-bottom: 10px;
+  }
+
+  .nav-image .calltoaction .tysabri-promo-container {
+    margin-right: 24px;
+  }
+
+  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
+    margin-top: 0;
+  }
+
+  .num-ways {
+    margin-bottom: 33px;
+  }
+
+  .page_plan-effectively-treat-ms .fact-sheet-image .section img.talent {
+    margin-left: 0;
+  }
+
+  .nav-image .calltoaction .tysabri-cta{
+    width: 90px;
+  }
+
+  .nav-image .calltoaction .tysabri-promo-container {
+    margin-right: 23px;
+  }
+
+  .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img{
+    margin-top: -50px;
+  }
+
+  .second-column {
+    margin-top: -115px;
+  }
+
+}
+
+/* Landscape */
+@media only screen
+  and (device-width: 320px)
+  and (device-height: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  .logo-options .col1 .first {
+      margin: 0;
+      padding: 0;
+      margin-top: 30px;
+      margin-left: 100px !important;
+  }
+
+  .logo-options .col1 .first img {
+      width: 70% !important;
+      text-align: center;
+  }
+
+  .num-ways {
+    margin-bottom: 24px;
+  }
+
+  .second-column {
+      margin-top: -33px;
+  }
+
 }
 
 
-/* ----------- Galaxy S3 ----------- */
+/* ----------- Android ----------- */
 
 
-/* Portrait */
-@media screen
-  and (device-width: 320px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+/* ----------- Galaxy S8 ----------- */
 
-    .nav-image .calltoaction .tysabri-promo-container {
-        padding-left: 0;
-        padding-right: 10px;
-        height: -14px;
-        width: 20%;
-        margin-right: 15px;
-        margin-top: -73px;
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-height: 740px){
+
+    .columncontrol .column-control-column .columncontrol {
+      margin: 0;
+      margin-top: 20px;
+      font-size: 17px;
+    }
+
+    .teasertile .media-heading {
+      margin-bottom: -15px;
+    }
+
+    .teasertile .media .media-body p {
+      font-size: 17px;
+    }
+
+    .columncontrol .column-control-column .text {
+      font-size: 17px;
+    }
+
+    .page_plan-effectively-treat-ms .columncontrol .column-control-column .text, .page_plan-effectively-treat-ms p.content-subtitle {
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    .footer-categories {
+      display: block;
     }
 
 }
 
+
 /* Portrait */
 @media screen
-  and (device-width: 412px)
-  and (device-height: 732px)
-  and (-webkit-device-pixel-ratio: 2)
+  and (device-width: 360px)
+  and (device-height: 740px)
   and (orientation: portrait) {
 
-    .nav-image .calltoaction .tysabri-promo-container {
-        margin-right: 12px;
-        margin-top: -62px;
+    header .fixed {
+      position: absolute;
+    }
+
+    .logo-options .col1 .first {
+        margin: 0;
+        padding: 0;
+        margin-top: 10px /*header-reducer*/;
+    }
+
+      .logo-options .col1 .first img {
+          width: 450px;
+      }
+
+      .fact-sheet .desktop-image {
+        display: none;
+      }
+
+      .generic-page .columncontrol {
+        margin-left: 30px;
+        margin-right: 20px;
+      }
+
+      .nav-image .adaptiveimage figure img {
+        float: left;
+        margin-left: -1px;
+        margin-top: -55px;
+        margin-bottom: 10px;
+      }
+
+      .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
+        margin-top: 0;
+      }
+
+      .num-ways {
+          margin-bottom: 25px;
+      }
+
+      .second-column {
+        margin-top: -120px;
+      }
+
+      .page_plan-effectively-treat-ms .fact-sheet-image .section img.talent {
+        margin-left: 0;
+      }
+
+      .nav-image .calltoaction .tysabri-cta{
+        width: 90px;
+      }
+
+      .nav-image .calltoaction .tysabri-promo-container {
+          margin-right: 17px;
+      }
+
+      .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img{
+        margin-top: -50px;
+      }
+
+      .page_plan-effectively-treat-ms .columncontrol .column-control-column .text {
+        margin-bottom: 60px;
+      }
+
+  .fact-sheet-image .section img.talent {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+}
+
+/* Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 740px)
+  and (orientation: landscape) {
+        header .fixed {
+          position: absolute;
+        }
+
+        .logo-options .col1 .first {
+            margin-right: auto;
+            margin-left: 120px;
+            margin-top: 20px;
+        }
+
+        .logo-options .col1 .first img {
+          width: 70%;
+          text-align: center;
+        }
+
+        .second-column {
+          margin-top: -30px;
+        }
+}
+
+
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    header .fixed {
+      position: absolute;
+    }
+
+    .logo-options .col1 .first {
+        margin: 0;
+        padding: 0;
+        margin-top: 10px /*header-reducer*/;
+    }
+
+      .logo-options .col1 .first img {
+          width: 450px;
+      }
+
+      .fact-sheet .desktop-image {
+        display: none;
+      }
+
+      .generic-page .columncontrol {
+        margin-left: 30px;
+        margin-right: 20px;
+      }
+
+      .nav-image .adaptiveimage figure img {
+        float: left;
+        margin-left: -1px;
+        margin-top: -55px;
+        margin-bottom: 10px;
+      }
+
+      .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
+        margin-top: 0;
+      }
+
+      .num-ways {
+          margin-bottom: 25px;
+      }
+
+      .second-column {
+        margin-top: -120px;
+      }
+
+      .page_plan-effectively-treat-ms .fact-sheet-image .section img.talent {
+        margin-left: 0;
+      }
+
+      .nav-image .calltoaction .tysabri-cta{
+        width: 90px;
+      }
+
+      .nav-image .calltoaction .tysabri-promo-container {
+          margin-right: 17px;
+      }
+
+
+      .page_plan-effectively-treat-ms .columncontrol .column-control-column .text {
+        margin-bottom: 60px;
+      }
+
+      .fact-sheet-image .section img.talent {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+      }
+
+      .nav-image .calltoaction .tysabri-promo-container {
+          padding-left: 0;
+          padding-right: 10px;
+          height: -14px;
+          width: 20%;
+          margin-right: 15px;
+          margin-top: -73px;
+      }
+
+      .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img{
+        margin-top: -50px;
+      }
+}
+
+/* Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+    header .fixed {
+      position: absolute;
+    }
+
+    .logo-options .col1 .first {
+        margin-right: auto;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+
+    .logo-options .col1 .first img {
+      width: 70%;
+      text-align: center;
+    }
+
+    .second-column {
+      margin-top: -30px;
+    }
+
+}
+
+
+
+
+/* ----------- Galaxy S6 ----------- */
+
+
+/* Portrait */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    header .fixed {
+      position: absolute;
+    }
+
+    .logo-options .col1 .first {
+        margin: 0;
+        padding: 0;
+        margin-top: 10px /*header-reducer*/;
+    }
+
+      .logo-options .col1 .first img {
+          width: 450px;
+      }
+
+      .fact-sheet .desktop-image {
+        display: none;
+      }
+
+      .generic-page .columncontrol {
+        margin-left: 30px;
+        margin-right: 20px;
+      }
+
+      .nav-image .adaptiveimage figure img {
+        float: left;
+        margin-left: -1px;
+        margin-top: -55px;
+        margin-bottom: 10px;
+      }
+
+      .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
+        margin-top: 0;
+      }
+
+      .num-ways {
+          margin-bottom: 25px;
+      }
+
+      .second-column {
+        margin-top: -120px;
+      }
+
+      .page_plan-effectively-treat-ms .fact-sheet-image .section img.talent {
+        margin-left: 0;
+      }
+
+      .nav-image .calltoaction .tysabri-cta{
+        width: 90px;
+      }
+
+      .nav-image .calltoaction .tysabri-promo-container {
+          margin-right: 17px;
+      }
+
+
+      .page_plan-effectively-treat-ms .columncontrol .column-control-column .text {
+        margin-bottom: 60px;
+      }
+
+      .fact-sheet-image .section img.talent {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+      }
+
+      .nav-image .calltoaction .tysabri-promo-container {
+          padding-left: 0;
+          padding-right: 10px;
+          height: -14px;
+          width: 20%;
+          margin-right: 15px;
+          margin-top: -73px;
+      }
+
+      .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img{
+        margin-top: -50px;
+      }
+
+}
+
+/* Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+    header .fixed {
+      position: absolute;
+    }
+
+    .logo-options .col1 .first {
+        margin-right: auto;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+
+    .logo-options .col1 .first img {
+      width: 70%;
+      text-align: center;
+    }
+
+    .second-column {
+      margin-top: -30px;
     }
 
 }
