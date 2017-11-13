@@ -1268,72 +1268,76 @@ p.content-description {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-    header .fixed {
-      position: absolute;
+  header .fixed {
+    position: absolute;
+  }
+
+  .logo-options .col1 .first {
+      margin: 0;
+      padding: 0;
+      margin-top: 10px /*header-reducer*/;
+  }
+
+    .logo-options .col1 .first img {
+        width: 450px;
     }
 
-    .logo-options .col1 .first {
-        margin: 0;
-        padding: 0;
-        margin-top: 10px /*header-reducer*/;
+    .fact-sheet .desktop-image {
+      display: none;
     }
 
-      .logo-options .col1 .first img {
-          width: 450px;
-      }
+    .generic-page .columncontrol {
+      margin-left: 30px;
+      margin-right: 20px;
+    }
 
-      .fact-sheet .desktop-image {
-        display: none;
-      }
+    .nav-image .adaptiveimage figure img {
+      float: left;
+      margin-left: -1px;
+      margin-top: -55px;
+      margin-bottom: 10px;
+    }
 
-      .generic-page .columncontrol {
-        margin-left: 30px;
-        margin-right: 20px;
-      }
+    .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
+      margin-top: 0;
+    }
 
-      .nav-image .adaptiveimage figure img {
-        float: left;
-        margin-left: -1px;
-        margin-top: -55px;
-        margin-bottom: 10px;
-      }
+    .num-ways {
+        margin-bottom: 25px;
+    }
 
-      .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img {
-        margin-top: 0;
-      }
+    .second-column {
+      margin-top: -120px;
+    }
 
-      .num-ways {
-          margin-bottom: 25px;
-      }
+    .page_plan-effectively-treat-ms .fact-sheet-image .section img.talent {
+      margin-left: 0;
+    }
 
-      .second-column {
-        margin-top: -120px;
-      }
+    .nav-image .calltoaction .tysabri-cta{
+      width: 90px;
+    }
 
-      .page_plan-effectively-treat-ms .fact-sheet-image .section img.talent {
-        margin-left: 0;
-      }
+    .nav-image .calltoaction .tysabri-promo-container {
+        margin-right: 17px;
+    }
 
-      .nav-image .calltoaction .tysabri-cta{
-        width: 90px;
-      }
+    .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img{
+      margin-top: -50px;
+    }
 
-      .nav-image .calltoaction .tysabri-promo-container {
-          margin-right: 17px;
-      }
-
-      .start-nav-image .adaptiveimage figure img, .end-nav-image .adaptiveimage figure img{
-        margin-top: -50px;
-      }
-
-      .page_plan-effectively-treat-ms .columncontrol .column-control-column .text {
-        margin-bottom: 60px;
-      }
+    .page_plan-effectively-treat-ms .columncontrol .column-control-column .text {
+      margin-bottom: 60px;
+    }
 
   .fact-sheet-image .section img.talent {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
+  }
+
+  .columncontrol .teasertile {
+    margin-bottom: 70px;
   }
 
 }
@@ -1685,6 +1689,14 @@ p.content-description {
     margin-top: -115px;
   }
 
+  p.content-description, p.content-subtitle, .text.parbase.section  {
+    width: 255px;
+  }
+
+  .columncontrol .teasertile {
+    margin-bottom: 70px;
+  }
+
 }
 
 /* Landscape */
@@ -1828,6 +1840,14 @@ p.content-description {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
+  }
+
+  p.content-description, p.content-subtitle, .text.parbase.section  {
+    width: 255px;
+  }
+
+  .columncontrol .teasertile {
+    margin-bottom: 70px;
   }
 
 }
